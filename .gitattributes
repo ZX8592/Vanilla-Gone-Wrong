@@ -1,7 +1,7 @@
 # Keep verified game resources and BOM/CRLF TXT documents byte-for-byte.
 data/** -text
 pack.mcmeta -text
-docs/*.txt -text
+*.txt -text
 
 *.md text eol=lf
 *.py text eol=lf
