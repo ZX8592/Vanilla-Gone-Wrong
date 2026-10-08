@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_cluster"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:large_amethyst_bud"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:medium_amethyst_bud"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:small_amethyst_bud"
+        }
+      ]
+    }
+  ]
+}

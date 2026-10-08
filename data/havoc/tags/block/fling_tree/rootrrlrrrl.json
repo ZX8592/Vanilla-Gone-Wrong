@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:terracotta",
+    "minecraft:tinted_glass",
+    "minecraft:tnt"
+  ]
+}

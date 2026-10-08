@@ -1,0 +1,185 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3,
+                  "min": 1
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:sequence",
+                "functions": []
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:sequence",
+                "functions": []
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:sequence",
+                "functions": []
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4,
+                  "min": 1
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:sequence",
+                "functions": []
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4,
+                  "min": 1
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 5,
+        "min": 1
+      }
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bundle",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 2
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:chests/village/village_tannery",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "type": "minecraft:sequence",
+        "functions": [
+          {
+            "item_filter": {
+              "items": "#havoc:stack_limited_blocks"
+            },
+            "on_pass": {
+              "components": {
+                "minecraft:max_stack_size": 16
+              },
+              "type": "minecraft:set_components"
+            },
+            "type": "minecraft:filtered"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:filtered",
+        "item_filter": {
+          "items": "#havoc:r17/curse_equipment"
+        },
+        "on_pass": {
+          "type": "minecraft:enchant_randomly",
+          "options": [
+            "minecraft:binding_curse",
+            "minecraft:vanishing_curse"
+          ],
+          "only_compatible": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+# Generated from the approved checklist; Java 26.3.
+execute positioned ~-1 ~ ~-1 run function havoc:terrain/drowned_water
+execute positioned ~-1 ~ ~0 run function havoc:terrain/drowned_water
+execute positioned ~-1 ~ ~1 run function havoc:terrain/drowned_water
+execute positioned ~0 ~ ~-1 run function havoc:terrain/drowned_water
+execute positioned ~0 ~ ~0 run function havoc:terrain/drowned_water
+execute positioned ~0 ~ ~1 run function havoc:terrain/drowned_water
+execute positioned ~1 ~ ~-1 run function havoc:terrain/drowned_water
+execute positioned ~1 ~ ~0 run function havoc:terrain/drowned_water
+execute positioned ~1 ~ ~1 run function havoc:terrain/drowned_water

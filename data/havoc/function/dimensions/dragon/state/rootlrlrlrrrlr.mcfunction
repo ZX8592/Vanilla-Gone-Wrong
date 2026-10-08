@@ -1,0 +1,15 @@
+# Generated from the approved checklist; Java 26.3.
+data modify storage havoc:dimension falling set value {"id":"minecraft:glow_lichen"}
+execute if block ~ ~ ~ minecraft:glow_lichen[down=true] run data modify storage havoc:dimension falling.properties.down set value "true"
+execute if block ~ ~ ~ minecraft:glow_lichen[down=false] run data modify storage havoc:dimension falling.properties.down set value "false"
+execute if block ~ ~ ~ minecraft:glow_lichen[east=true] run data modify storage havoc:dimension falling.properties.east set value "true"
+execute if block ~ ~ ~ minecraft:glow_lichen[east=false] run data modify storage havoc:dimension falling.properties.east set value "false"
+execute if block ~ ~ ~ minecraft:glow_lichen[north=true] run data modify storage havoc:dimension falling.properties.north set value "true"
+execute if block ~ ~ ~ minecraft:glow_lichen[north=false] run data modify storage havoc:dimension falling.properties.north set value "false"
+execute if block ~ ~ ~ minecraft:glow_lichen[south=true] run data modify storage havoc:dimension falling.properties.south set value "true"
+execute if block ~ ~ ~ minecraft:glow_lichen[south=false] run data modify storage havoc:dimension falling.properties.south set value "false"
+execute if block ~ ~ ~ minecraft:glow_lichen[up=true] run data modify storage havoc:dimension falling.properties.up set value "true"
+execute if block ~ ~ ~ minecraft:glow_lichen[up=false] run data modify storage havoc:dimension falling.properties.up set value "false"
+data modify storage havoc:dimension falling.properties.waterlogged set value "false"
+execute if block ~ ~ ~ minecraft:glow_lichen[west=true] run data modify storage havoc:dimension falling.properties.west set value "true"
+execute if block ~ ~ ~ minecraft:glow_lichen[west=false] run data modify storage havoc:dimension falling.properties.west set value "false"

@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:enchanted_item",
+      "conditions": {
+        "levels": 2
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/enchant_mid"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:nether_wart_block",
+    "minecraft:netherite_block",
+    "minecraft:netherrack"
+  ]
+}

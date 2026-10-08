@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:light_weighted_pressure_plate",
+    "minecraft:lightning_rod",
+    "minecraft:lily_of_the_valley",
+    "minecraft:lily_pad",
+    "minecraft:lime_candle",
+    "minecraft:lime_carpet",
+    "minecraft:lime_concrete"
+  ]
+}

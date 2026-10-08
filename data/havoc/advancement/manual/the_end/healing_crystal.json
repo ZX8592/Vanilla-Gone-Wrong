@@ -1,0 +1,41 @@
+{
+  "parent": "havoc:manual/the_end/return_fire",
+  "display": {
+    "icon": {
+      "id": "minecraft:end_crystal"
+    },
+    "title": {
+      "text": "末影水晶-说明"
+    },
+    "description": {
+      "text": "击碎巨龙附近的水晶，让反噬的能量给它致命一击。"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:blast_loot_enabled",
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_end"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

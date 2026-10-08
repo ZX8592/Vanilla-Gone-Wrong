@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:yellow_poplar_leaves",
+    "minecraft:yellow_stained_glass",
+    "minecraft:yellow_stained_glass_pane",
+    "minecraft:yellow_terracotta"
+  ]
+}

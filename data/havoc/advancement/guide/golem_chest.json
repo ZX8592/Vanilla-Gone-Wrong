@@ -1,0 +1,23 @@
+{
+  "parent": "havoc:guide/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:chest"
+    },
+    "title": {
+      "text": "不问自取"
+    },
+    "description": {
+      "text": "在村庄开箱，招来铁傀儡的怒火。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "predicate": {
+            "dimension": "minecraft:the_nether",
+            "block": {
+              "blocks": "#havoc:native_flammable"
+            }
+          },
+          "type": "minecraft:location_check"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/burning_place"
+  }
+}

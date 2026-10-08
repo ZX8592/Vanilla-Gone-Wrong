@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "raining": true,
+      "type": "minecraft:weather_check"
+    },
+    {
+      "predicate": {
+        "dimension": "minecraft:overworld",
+        "can_see_sky": true
+      },
+      "type": "minecraft:location_check"
+    }
+  ]
+}

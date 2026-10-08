@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:exposed_lightning_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lightning_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oxidized_lightning_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_exposed_lightning_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_lightning_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_oxidized_lightning_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_weathered_lightning_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:weathered_lightning_rod"
+        }
+      ]
+    }
+  ]
+}

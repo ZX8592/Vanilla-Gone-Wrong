@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:polished_sulfur_wall",
+    "minecraft:polished_tuff",
+    "minecraft:polished_tuff_slab",
+    "minecraft:polished_tuff_stairs",
+    "minecraft:polished_tuff_wall",
+    "minecraft:poplar_button",
+    "minecraft:poplar_fence",
+    "minecraft:poplar_fence_gate",
+    "minecraft:poplar_log",
+    "minecraft:poplar_planks",
+    "minecraft:poplar_pressure_plate",
+    "minecraft:poplar_sapling",
+    "minecraft:poplar_slab",
+    "minecraft:poplar_stairs",
+    "minecraft:poplar_trapdoor"
+  ]
+}

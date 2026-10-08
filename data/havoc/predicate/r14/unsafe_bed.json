@@ -1,0 +1,10 @@
+{
+  "predicate": {
+    "light": {
+      "light": {
+        "max": 7
+      }
+    }
+  },
+  "type": "minecraft:location_check"
+}

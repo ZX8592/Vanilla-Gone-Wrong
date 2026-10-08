@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:pink_concrete_stairs",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:pink_petals",
+    "minecraft:pink_stained_glass",
+    "minecraft:pink_stained_glass_pane",
+    "minecraft:pink_terracotta",
+    "minecraft:pink_tulip"
+  ]
+}

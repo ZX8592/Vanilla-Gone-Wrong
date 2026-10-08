@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bundle"
+    },
+    "title": {
+      "text": "手忙脚乱"
+    },
+    "description": {
+      "text": "挨了一记结实的，快捷栏全乱了套。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "parent": "havoc:guide/involuntary"
+}

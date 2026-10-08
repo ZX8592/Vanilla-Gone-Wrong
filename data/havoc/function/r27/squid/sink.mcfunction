@@ -1,0 +1,2 @@
+execute unless predicate havoc:feet_water run return 0
+execute positioned ~ ~-0.05 ~ if block ~0 ~0 ~0 #havoc:r18/pull_space if block ~-0.39 ~0 ~-0.39 #havoc:r18/pull_space if block ~-0.39 ~0 ~0.39 #havoc:r18/pull_space if block ~0.39 ~0 ~-0.39 #havoc:r18/pull_space if block ~0.39 ~0 ~0.39 #havoc:r18/pull_space if block ~0 ~0.79 ~0 #havoc:r18/pull_space if block ~-0.39 ~0.79 ~-0.39 #havoc:r18/pull_space if block ~-0.39 ~0.79 ~0.39 #havoc:r18/pull_space if block ~0.39 ~0.79 ~-0.39 #havoc:r18/pull_space if block ~0.39 ~0.79 ~0.39 #havoc:r18/pull_space run tp @s ~ ~ ~

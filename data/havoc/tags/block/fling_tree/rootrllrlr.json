@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:oxidized_copper_trapdoor",
+    "minecraft:oxidized_cut_copper",
+    "minecraft:oxidized_cut_copper_slab",
+    "minecraft:oxidized_cut_copper_stairs",
+    "minecraft:oxidized_lightning_rod",
+    "minecraft:packed_ice",
+    "minecraft:packed_mud"
+  ]
+}

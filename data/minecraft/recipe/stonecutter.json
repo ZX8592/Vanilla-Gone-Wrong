@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:stone",
+    "I": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    " I ",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:stonecutter",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

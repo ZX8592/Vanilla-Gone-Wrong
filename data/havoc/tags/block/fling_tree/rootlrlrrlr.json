@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:gravel",
+    "minecraft:gray_candle",
+    "minecraft:gray_carpet",
+    "minecraft:gray_concrete"
+  ]
+}

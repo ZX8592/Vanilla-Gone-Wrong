@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:damaged_anvil"
+    },
+    "title": {
+      "text": "虚有其表"
+    },
+    "description": {
+      "text": "破损的护甲挡不住重击，及时修补你的防具。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "parent": "havoc:guide/weight"
+}

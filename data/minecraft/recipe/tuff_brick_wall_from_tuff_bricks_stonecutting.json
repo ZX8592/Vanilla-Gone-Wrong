@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:tuff_bricks",
+  "result": {
+    "id": "minecraft:tuff_brick_wall",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

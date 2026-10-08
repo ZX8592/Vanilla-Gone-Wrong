@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "death": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Health:0.0f}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:r31/death/hurt"
+  }
+}

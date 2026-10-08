@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:birch_fence",
+    "minecraft:birch_fence_gate"
+  ]
+}

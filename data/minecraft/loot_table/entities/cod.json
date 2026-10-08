@@ -1,0 +1,121 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:furnace_smelt",
+                "condition": {
+                  "terms": [
+                    {
+                      "entity": "this",
+                      "predicate": {
+                        "minecraft:flags": {
+                          "is_on_fire": true
+                        }
+                      },
+                      "type": "minecraft:entity_properties"
+                    },
+                    {
+                      "entity": "direct_attacker",
+                      "predicate": {
+                        "minecraft:equipment": {
+                          "mainhand": {
+                            "predicates": {
+                              "minecraft:enchantments": [
+                                {
+                                  "enchantments": "#minecraft:smelts_loot"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "type": "minecraft:entity_properties"
+                    }
+                  ],
+                  "type": "minecraft:any_of"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone_meal"
+        }
+      ],
+      "rolls": 1,
+      "condition": {
+        "chance": 0.05,
+        "type": "minecraft:random_chance"
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_custom_data",
+                "tag": "{havoc_event:\"fish_death37\"}"
+              },
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:damage_resistant": {
+                    "types": "#havoc:signal_immune"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          "havoc:blast_loot_enabled",
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.2
+          }
+        ]
+      }
+    }
+  ],
+  "random_sequence": "minecraft:entities/cod",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "item_filter": {
+          "items": "#havoc:stack_limited_blocks"
+        },
+        "on_pass": {
+          "components": {
+            "minecraft:max_stack_size": 16
+          },
+          "type": "minecraft:set_components"
+        },
+        "type": "minecraft:filtered"
+      }
+    ]
+  }
+}

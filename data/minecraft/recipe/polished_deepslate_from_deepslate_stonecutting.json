@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:deepslate",
+  "result": {
+    "id": "minecraft:polished_deepslate",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

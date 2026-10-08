@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lime_wool_slab",
+    "minecraft:lime_wool_stairs",
+    "minecraft:lodestone",
+    "minecraft:loom",
+    "minecraft:magenta_candle",
+    "minecraft:magenta_carpet",
+    "minecraft:magenta_concrete"
+  ]
+}

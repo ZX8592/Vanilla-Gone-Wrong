@@ -1,0 +1,10 @@
+# Keep verified game resources and BOM/CRLF TXT documents byte-for-byte.
+data/** -text
+pack.mcmeta -text
+docs/*.txt -text
+
+*.md text eol=lf
+*.py text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+*.zip binary

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:poplar_fence_gate",
+    "minecraft:poplar_log",
+    "minecraft:poplar_planks",
+    "minecraft:poplar_pressure_plate"
+  ]
+}

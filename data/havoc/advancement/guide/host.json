@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:end_crystal"
+    },
+    "title": {
+      "text": "靠山也靠不住"
+    },
+    "description": {
+      "text": "击败一只携带末影水晶的僵尸或幻翼。"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": "{Tags:[\"havoc.crystal_host\"]}",
+            "minecraft:entity_type": "#havoc:r18/crystal_challenge"
+          }
+        },
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:survival",
+            "havoc:blast_loot_enabled"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "havoc:guide/root",
+  "rewards": {
+    "experience": 30
+  }
+}

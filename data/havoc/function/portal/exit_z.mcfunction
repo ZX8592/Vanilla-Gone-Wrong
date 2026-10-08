@@ -1,0 +1,19 @@
+# Generated from the approved checklist; Java 26.3.
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~ ~ if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~ ~ if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~ ~1 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~ ~1 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~ ~2 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~ ~2 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~-1 ~ if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~-1 ~ if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~-1 ~1 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~-1 ~1 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~-1 ~2 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~-1 ~2 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~1 ~ if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~1 ~ if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~1 ~1 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~1 ~1 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~2 ~1 ~2 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place
+execute unless score #portal_placed h.tmp matches 1 positioned ~-2 ~1 ~2 if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:portal_floor run function havoc:portal/place

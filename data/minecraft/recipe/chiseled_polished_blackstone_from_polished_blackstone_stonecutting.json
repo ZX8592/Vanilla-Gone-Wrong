@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:polished_blackstone",
+  "result": {
+    "id": "minecraft:chiseled_polished_blackstone",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

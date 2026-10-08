@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:sulfur_brick_slab",
+    "minecraft:sulfur_brick_stairs"
+  ]
+}

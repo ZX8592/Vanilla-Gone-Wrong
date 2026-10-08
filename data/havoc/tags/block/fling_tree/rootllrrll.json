@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:copper_lantern",
+    "minecraft:copper_ore",
+    "minecraft:copper_torch",
+    "minecraft:copper_trapdoor",
+    "minecraft:cornflower",
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:cracked_deepslate_tiles"
+  ]
+}

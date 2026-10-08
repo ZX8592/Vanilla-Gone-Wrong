@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:sulfur",
+  "result": {
+    "id": "minecraft:polished_sulfur_wall",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

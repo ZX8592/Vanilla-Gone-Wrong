@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:brick"
+  },
+  "pattern": [
+    "# #",
+    " # "
+  ],
+  "result": {
+    "id": "minecraft:flower_pot",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

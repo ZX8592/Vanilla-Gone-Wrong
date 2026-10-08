@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:iron_golem"
+          },
+          "blocked": false
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/golem_launch"
+  }
+}

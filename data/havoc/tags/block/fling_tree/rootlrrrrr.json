@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:magenta_wool_slab",
+    "minecraft:magenta_wool_stairs",
+    "minecraft:magma_block",
+    "minecraft:mangrove_button",
+    "minecraft:mangrove_fence",
+    "minecraft:mangrove_fence_gate",
+    "minecraft:mangrove_leaves"
+  ]
+}

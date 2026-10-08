@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:mossy_cobblestone_stairs",
+    "minecraft:mossy_cobblestone_wall",
+    "minecraft:mossy_stone_brick_slab"
+  ]
+}

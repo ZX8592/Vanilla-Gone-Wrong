@@ -1,0 +1,16 @@
+# Generated from the approved checklist; Java 26.3.
+data modify storage havoc:dimension falling set value {"id":"minecraft:pale_moss_carpet"}
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[bottom=true] run data modify storage havoc:dimension falling.properties.bottom set value "true"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[bottom=false] run data modify storage havoc:dimension falling.properties.bottom set value "false"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[east=none] run data modify storage havoc:dimension falling.properties.east set value "none"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[east=low] run data modify storage havoc:dimension falling.properties.east set value "low"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[east=tall] run data modify storage havoc:dimension falling.properties.east set value "tall"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[north=none] run data modify storage havoc:dimension falling.properties.north set value "none"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[north=low] run data modify storage havoc:dimension falling.properties.north set value "low"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[north=tall] run data modify storage havoc:dimension falling.properties.north set value "tall"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[south=none] run data modify storage havoc:dimension falling.properties.south set value "none"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[south=low] run data modify storage havoc:dimension falling.properties.south set value "low"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[south=tall] run data modify storage havoc:dimension falling.properties.south set value "tall"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[west=none] run data modify storage havoc:dimension falling.properties.west set value "none"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[west=low] run data modify storage havoc:dimension falling.properties.west set value "low"
+execute if block ~ ~ ~ minecraft:pale_moss_carpet[west=tall] run data modify storage havoc:dimension falling.properties.west set value "tall"

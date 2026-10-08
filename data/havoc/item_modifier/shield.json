@@ -1,0 +1,6 @@
+{
+  "components": {
+    "minecraft:max_damage": 168
+  },
+  "type": "minecraft:set_components"
+}

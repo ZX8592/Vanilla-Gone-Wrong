@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell"
+        }
+      ],
+      "rolls": 1,
+      "condition": {
+        "terms": [
+          {
+            "type": "minecraft:killed_by_player"
+          },
+          {
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.060000002,
+              "per_level_above_first": 0.01
+            },
+            "enchantment": "minecraft:looting",
+            "unenchanted_chance": 0.05,
+            "type": "minecraft:random_chance_with_enchanted_bonus"
+          }
+        ],
+        "type": "minecraft:all_of"
+      }
+    }
+  ],
+  "random_sequence": "minecraft:entities/nautilus",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "item_filter": {
+          "items": "#havoc:stack_limited_blocks"
+        },
+        "on_pass": {
+          "components": {
+            "minecraft:max_stack_size": 16
+          },
+          "type": "minecraft:set_components"
+        },
+        "type": "minecraft:filtered"
+      }
+    ]
+  }
+}

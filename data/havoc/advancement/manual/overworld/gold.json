@@ -1,0 +1,36 @@
+{
+  "parent": "havoc:manual/overworld/copper_torch",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_chestplate"
+    },
+    "title": {
+      "text": "僵尸猪灵-说明"
+    },
+    "description": {
+      "text": "金甲能让你与它们相安无事——但激怒它们之后可就不灵了！"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:blast_loot_enabled",
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:the_nether"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

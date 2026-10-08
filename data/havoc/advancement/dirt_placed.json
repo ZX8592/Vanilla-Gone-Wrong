@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "predicate": {
+            "block": {
+              "blocks": "#havoc:gravity_dirt"
+            }
+          },
+          "type": "minecraft:location_check"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/dirt_placed"
+  }
+}

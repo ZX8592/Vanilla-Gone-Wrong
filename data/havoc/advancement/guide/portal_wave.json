@@ -1,0 +1,23 @@
+{
+  "parent": "havoc:guide/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:obsidian"
+    },
+    "title": {
+      "text": "门庭若市"
+    },
+    "description": {
+      "text": "在下界传送门旁，迎击一波穿梭而来的入侵者。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

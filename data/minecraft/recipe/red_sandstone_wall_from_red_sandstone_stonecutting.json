@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:red_sandstone",
+  "result": {
+    "id": "minecraft:red_sandstone_wall",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

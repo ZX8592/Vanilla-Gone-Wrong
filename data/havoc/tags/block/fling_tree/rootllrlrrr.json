@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:composter",
+    "minecraft:copper_bars",
+    "minecraft:copper_block",
+    "minecraft:copper_bulb"
+  ]
+}

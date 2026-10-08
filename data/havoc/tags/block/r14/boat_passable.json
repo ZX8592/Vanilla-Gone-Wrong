@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "#havoc:air",
+    "minecraft:water",
+    "minecraft:lava",
+    "#minecraft:replaceable",
+    "#minecraft:flowers",
+    "#minecraft:rails",
+    "#minecraft:buttons",
+    "#minecraft:climbable",
+    "#minecraft:fire",
+    "#minecraft:signs",
+    "#minecraft:banners",
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    "minecraft:soul_torch",
+    "minecraft:soul_wall_torch",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:redstone_wire",
+    "minecraft:lever"
+  ]
+}

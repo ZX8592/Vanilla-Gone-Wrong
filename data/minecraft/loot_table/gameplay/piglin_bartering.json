@@ -1,0 +1,320 @@
+{
+  "type": "minecraft:barter",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "options": "minecraft:soul_speed",
+                "type": "minecraft:enchant_randomly"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "weight": 8,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "options": "minecraft:soul_speed",
+                "type": "minecraft:enchant_randomly"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 8,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "id": "minecraft:fire_resistance",
+                "type": "minecraft:set_potion"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "weight": 8,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "id": "minecraft:fire_resistance",
+                "type": "minecraft:set_potion"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 10,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "id": "minecraft:water",
+                "type": "minecraft:set_potion"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "weight": 10,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 36,
+                  "min": 10
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "weight": 10,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4,
+                  "min": 2
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dried_ghast",
+          "weight": 10,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "weight": 20,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 9,
+                  "min": 3
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:quartz",
+          "weight": 20,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 12,
+                  "min": 5
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:obsidian",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crying_obsidian",
+          "weight": 40,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3,
+                  "min": 1
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fire_charge",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather",
+          "weight": 40,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4,
+                  "min": 2
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:soul_sand",
+          "weight": 40,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 8,
+                  "min": 2
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_brick",
+          "weight": 40,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 8,
+                  "min": 2
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spectral_arrow",
+          "weight": 40,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 12,
+                  "min": 6
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gravel",
+          "weight": 40,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 16,
+                  "min": 8
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blackstone",
+          "weight": 40,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 16,
+                  "min": 8
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/piglin_bartering",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "item_filter": {
+          "items": "#havoc:stack_limited_blocks"
+        },
+        "on_pass": {
+          "components": {
+            "minecraft:max_stack_size": 16
+          },
+          "type": "minecraft:set_components"
+        },
+        "type": "minecraft:filtered"
+      }
+    ]
+  }
+}

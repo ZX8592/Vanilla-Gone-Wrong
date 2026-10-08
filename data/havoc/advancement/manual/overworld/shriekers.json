@@ -1,0 +1,41 @@
+{
+  "parent": "havoc:guide/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk_shrieker"
+    },
+    "title": {
+      "text": "幽匿尖啸体-说明"
+    },
+    "description": {
+      "text": "亲手放下的幽匿尖啸体，也能召来监守者。"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:blast_loot_enabled",
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:overworld"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

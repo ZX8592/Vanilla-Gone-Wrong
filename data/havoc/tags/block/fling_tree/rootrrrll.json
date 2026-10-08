@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:tuff_stairs",
+    "minecraft:tuff_wall",
+    "minecraft:turtle_egg",
+    "minecraft:twisting_vines",
+    "minecraft:verdant_froglight",
+    "minecraft:vine",
+    "minecraft:warped_button",
+    "minecraft:warped_fence",
+    "minecraft:warped_fence_gate",
+    "minecraft:warped_fungus",
+    "minecraft:warped_hyphae",
+    "minecraft:warped_nylium",
+    "minecraft:warped_planks",
+    "minecraft:warped_pressure_plate",
+    "minecraft:warped_roots"
+  ]
+}

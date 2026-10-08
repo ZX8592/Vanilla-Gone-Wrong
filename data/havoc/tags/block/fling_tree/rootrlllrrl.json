@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:oak_wood",
+    "minecraft:observer",
+    "minecraft:obsidian"
+  ]
+}

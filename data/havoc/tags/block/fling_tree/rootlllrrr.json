@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:brown_wool",
+    "minecraft:brown_wool_slab",
+    "minecraft:brown_wool_stairs",
+    "minecraft:bubble_coral",
+    "minecraft:bubble_coral_block",
+    "minecraft:bubble_coral_fan",
+    "minecraft:budding_amethyst"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:crimson_fence_gate",
+    "minecraft:crimson_fungus",
+    "minecraft:crimson_hyphae",
+    "minecraft:crimson_nylium",
+    "minecraft:crimson_planks",
+    "minecraft:crimson_pressure_plate",
+    "minecraft:crimson_roots"
+  ]
+}

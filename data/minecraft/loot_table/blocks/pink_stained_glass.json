@@ -1,0 +1,569 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pink_stained_glass"
+        }
+      ],
+      "rolls": 1,
+      "condition": "minecraft:tool/can_silk_touch"
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "tag": "{havoc_dimension_event:\"support\"}",
+                "type": "minecraft:set_custom_data"
+              }
+            ]
+          }
+        }
+      ],
+      "condition": {
+        "offsetY": 1,
+        "predicate": {
+          "block": {
+            "blocks": "#havoc:gravity_dirt"
+          }
+        },
+        "type": "minecraft:location_check"
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "tag": "{havoc_dimension_event:\"blast_footprint\"}",
+                "type": "minecraft:set_custom_data"
+              },
+              {
+                "components": {
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:damage_resistant": {
+                    "types": "#havoc:blast_signal_immune"
+                  }
+                },
+                "type": "minecraft:set_components"
+              }
+            ]
+          }
+        }
+      ],
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          "havoc:blast_loot_enabled",
+          {
+            "predicate": {
+              "dimension": "minecraft:the_nether"
+            },
+            "type": "minecraft:location_check"
+          },
+          {
+            "terms": [
+              {
+                "entity": "this",
+                "predicate": {
+                  "minecraft:entity_type": "#havoc:blast_loot_sources"
+                },
+                "type": "minecraft:entity_properties"
+              },
+              {
+                "terms": [
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  }
+                ],
+                "type": "minecraft:any_of"
+              }
+            ],
+            "type": "minecraft:any_of"
+          }
+        ]
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "tag": "{havoc_dimension_event:\"overworld_blast\"}",
+                "type": "minecraft:set_custom_data"
+              },
+              {
+                "components": {
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:damage_resistant": {
+                    "types": "#havoc:signal_immune"
+                  }
+                },
+                "type": "minecraft:set_components"
+              }
+            ]
+          }
+        }
+      ],
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          "havoc:blast_loot_enabled",
+          {
+            "term": {
+              "predicate": {
+                "dimension": "minecraft:the_nether"
+              },
+              "type": "minecraft:location_check"
+            },
+            "type": "minecraft:inverted"
+          },
+          {
+            "terms": [
+              {
+                "entity": "this",
+                "predicate": {
+                  "minecraft:entity_type": "#havoc:blast_loot_sources"
+                },
+                "type": "minecraft:entity_properties"
+              },
+              {
+                "terms": [
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  },
+                  {
+                    "term": {
+                      "type": "minecraft:survives_explosion"
+                    },
+                    "type": "minecraft:inverted"
+                  }
+                ],
+                "type": "minecraft:any_of"
+              }
+            ],
+            "type": "minecraft:any_of"
+          }
+        ]
+      }
+    }
+  ],
+  "random_sequence": "minecraft:blocks/pink_stained_glass",
+  "modifier": {
+    "type": "minecraft:filtered",
+    "item_filter": {
+      "items": "minecraft:structure_void"
+    },
+    "on_pass": {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:max_stack_size": 1,
+        "minecraft:damage_resistant": {
+          "types": "#havoc:signal_immune"
+        }
+      }
+    },
+    "on_fail": {
+      "type": "minecraft:sequence",
+      "functions": [
+        {
+          "item_filter": {
+            "items": "minecraft:structure_void",
+            "predicates": {
+              "minecraft:custom_data": "{havoc_dimension_event:\"overworld_blast\"}"
+            }
+          },
+          "on_fail": {
+            "functions": [
+              {
+                "item_filter": {
+                  "items": "minecraft:structure_void",
+                  "predicates": {
+                    "minecraft:custom_data": "{havoc_dimension_event:\"blast_footprint\"}"
+                  }
+                },
+                "on_fail": {
+                  "functions": [
+                    {
+                      "item_filter": {
+                        "items": "#havoc:scarce_block_drops"
+                      },
+                      "on_pass": {
+                        "count": 0,
+                        "type": "minecraft:set_count",
+                        "condition": {
+                          "type": "minecraft:all_of",
+                          "terms": [
+                            {
+                              "term": {
+                                "terms": [
+                                  {
+                                    "entity": "this",
+                                    "predicate": {
+                                      "minecraft:entity_type": "#havoc:blast_loot_sources"
+                                    },
+                                    "type": "minecraft:entity_properties"
+                                  },
+                                  {
+                                    "terms": [
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      },
+                                      {
+                                        "term": {
+                                          "type": "minecraft:survives_explosion"
+                                        },
+                                        "type": "minecraft:inverted"
+                                      }
+                                    ],
+                                    "type": "minecraft:any_of"
+                                  }
+                                ],
+                                "type": "minecraft:any_of"
+                              },
+                              "type": "minecraft:inverted"
+                            },
+                            {
+                              "type": "minecraft:any_of",
+                              "terms": [
+                                {
+                                  "type": "minecraft:all_of",
+                                  "terms": [
+                                    "minecraft:tool/can_silk_touch",
+                                    {
+                                      "type": "minecraft:random_chance",
+                                      "chance": 0.5
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "minecraft:all_of",
+                                  "terms": [
+                                    {
+                                      "type": "minecraft:inverted",
+                                      "term": "minecraft:tool/can_silk_touch"
+                                    },
+                                    {
+                                      "type": "minecraft:random_chance",
+                                      "chance": 0.875
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "type": "minecraft:filtered"
+                    },
+                    {
+                      "item_filter": {
+                        "items": "#havoc:stack_limited_blocks"
+                      },
+                      "on_pass": {
+                        "components": {
+                          "minecraft:max_stack_size": 16
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      "type": "minecraft:filtered"
+                    }
+                  ],
+                  "type": "minecraft:sequence"
+                },
+                "type": "minecraft:filtered"
+              }
+            ],
+            "type": "minecraft:sequence"
+          },
+          "type": "minecraft:filtered"
+        }
+      ]
+    }
+  }
+}

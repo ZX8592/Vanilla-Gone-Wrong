@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:white_concrete",
+    "minecraft:white_concrete_powder",
+    "minecraft:white_concrete_slab"
+  ]
+}

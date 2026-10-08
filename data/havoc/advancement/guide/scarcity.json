@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cobblestone"
+    },
+    "title": {
+      "text": "来之不易"
+    },
+    "description": {
+      "text": "开采方块仅有小概率掉落物品，珍惜你的每一次收获。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "obtain": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#havoc:r28/scarcity_advancement"
+          }
+        ],
+        "player": "havoc:blast_loot_enabled"
+      }
+    }
+  },
+  "parent": "havoc:guide/root"
+}

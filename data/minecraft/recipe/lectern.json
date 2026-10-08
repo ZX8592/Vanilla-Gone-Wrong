@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "B": "minecraft:bookshelf",
+    "S": "#minecraft:wooden_slabs"
+  },
+  "pattern": [
+    "SSS",
+    " B ",
+    " S "
+  ],
+  "result": {
+    "id": "minecraft:lectern",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

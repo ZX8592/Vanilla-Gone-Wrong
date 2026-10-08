@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "#havoc:raw_meat"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/raw_food"
+  }
+}

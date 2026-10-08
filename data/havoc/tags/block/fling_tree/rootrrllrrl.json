@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spruce_fence",
+    "minecraft:spruce_fence_gate",
+    "minecraft:spruce_leaves"
+  ]
+}

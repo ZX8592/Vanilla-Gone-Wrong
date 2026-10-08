@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dark_oak_planks",
+    "minecraft:dark_oak_pressure_plate",
+    "minecraft:dark_oak_sapling",
+    "minecraft:dark_oak_slab"
+  ]
+}

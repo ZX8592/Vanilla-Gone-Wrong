@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dead_horn_coral_block",
+    "minecraft:dead_horn_coral_fan",
+    "minecraft:dead_tube_coral"
+  ]
+}

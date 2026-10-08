@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "H": "minecraft:hay_block",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    " R ",
+    "RHR",
+    " R "
+  ],
+  "result": {
+    "id": "minecraft:target",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

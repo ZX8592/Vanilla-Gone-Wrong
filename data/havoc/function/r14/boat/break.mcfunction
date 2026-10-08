@@ -1,0 +1,23 @@
+# Generated from the approved checklist; Java 26.3.
+execute if entity @s[type=minecraft:acacia_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:acacia_boat",plank:"minecraft:acacia_planks",chest:0}
+execute if entity @s[type=minecraft:acacia_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:acacia_chest_boat",plank:"minecraft:acacia_planks",chest:1}
+execute if entity @s[type=minecraft:bamboo_chest_raft] run return run function havoc:r14/boat/drop {boat:"minecraft:bamboo_chest_raft",plank:"minecraft:bamboo_planks",chest:1}
+execute if entity @s[type=minecraft:bamboo_raft] run return run function havoc:r14/boat/drop {boat:"minecraft:bamboo_raft",plank:"minecraft:bamboo_planks",chest:0}
+execute if entity @s[type=minecraft:birch_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:birch_boat",plank:"minecraft:birch_planks",chest:0}
+execute if entity @s[type=minecraft:birch_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:birch_chest_boat",plank:"minecraft:birch_planks",chest:1}
+execute if entity @s[type=minecraft:cherry_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:cherry_boat",plank:"minecraft:cherry_planks",chest:0}
+execute if entity @s[type=minecraft:cherry_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:cherry_chest_boat",plank:"minecraft:cherry_planks",chest:1}
+execute if entity @s[type=minecraft:dark_oak_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:dark_oak_boat",plank:"minecraft:dark_oak_planks",chest:0}
+execute if entity @s[type=minecraft:dark_oak_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:dark_oak_chest_boat",plank:"minecraft:dark_oak_planks",chest:1}
+execute if entity @s[type=minecraft:jungle_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:jungle_boat",plank:"minecraft:jungle_planks",chest:0}
+execute if entity @s[type=minecraft:jungle_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:jungle_chest_boat",plank:"minecraft:jungle_planks",chest:1}
+execute if entity @s[type=minecraft:mangrove_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:mangrove_boat",plank:"minecraft:mangrove_planks",chest:0}
+execute if entity @s[type=minecraft:mangrove_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:mangrove_chest_boat",plank:"minecraft:mangrove_planks",chest:1}
+execute if entity @s[type=minecraft:oak_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:oak_boat",plank:"minecraft:oak_planks",chest:0}
+execute if entity @s[type=minecraft:oak_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:oak_chest_boat",plank:"minecraft:oak_planks",chest:1}
+execute if entity @s[type=minecraft:pale_oak_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:pale_oak_boat",plank:"minecraft:pale_oak_planks",chest:0}
+execute if entity @s[type=minecraft:pale_oak_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:pale_oak_chest_boat",plank:"minecraft:pale_oak_planks",chest:1}
+execute if entity @s[type=minecraft:poplar_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:poplar_boat",plank:"minecraft:poplar_planks",chest:0}
+execute if entity @s[type=minecraft:poplar_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:poplar_chest_boat",plank:"minecraft:poplar_planks",chest:1}
+execute if entity @s[type=minecraft:spruce_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:spruce_boat",plank:"minecraft:spruce_planks",chest:0}
+execute if entity @s[type=minecraft:spruce_chest_boat] run return run function havoc:r14/boat/drop {boat:"minecraft:spruce_chest_boat",plank:"minecraft:spruce_planks",chest:1}

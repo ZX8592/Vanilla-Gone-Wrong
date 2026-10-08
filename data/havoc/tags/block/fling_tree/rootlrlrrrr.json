@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:green_carpet",
+    "minecraft:green_concrete",
+    "minecraft:green_concrete_powder",
+    "minecraft:green_concrete_slab"
+  ]
+}

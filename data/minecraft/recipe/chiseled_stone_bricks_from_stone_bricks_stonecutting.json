@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:stone_bricks",
+  "result": {
+    "id": "minecraft:chiseled_stone_bricks",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

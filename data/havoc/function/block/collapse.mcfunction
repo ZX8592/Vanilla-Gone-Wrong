@@ -1,0 +1,27 @@
+scoreboard players set #collapse_count h.tmp 0
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~1 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~-1 ~1 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~1 ~-1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~1 ~1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~1 ~1 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~-2 ~1 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~-1 ~1 ~-1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~-1 ~1 ~1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~1 ~-2 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~1 ~2 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~1 ~1 ~-1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~1 ~1 ~1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~2 ~1 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~2 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~-1 ~2 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~2 ~-1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~2 ~1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~1 ~2 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~-2 ~2 ~0 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~-1 ~2 ~-1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~-1 ~2 ~1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~2 ~-2 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~0 ~2 ~2 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~1 ~2 ~-1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~1 ~2 ~1 run function havoc:block/fall_rock
+execute if score #collapse_count h.tmp matches ..8 align xyz positioned ~2 ~2 ~0 run function havoc:block/fall_rock

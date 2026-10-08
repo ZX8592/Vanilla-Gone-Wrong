@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 30,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 7,
+                  "min": 2
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2,
+        "min": 1
+      }
+    }
+  ],
+  "random_sequence": "minecraft:chests/jungle_temple_dispenser",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "type": "minecraft:sequence",
+        "functions": [
+          {
+            "item_filter": {
+              "items": "#havoc:stack_limited_blocks"
+            },
+            "on_pass": {
+              "components": {
+                "minecraft:max_stack_size": 16
+              },
+              "type": "minecraft:set_components"
+            },
+            "type": "minecraft:filtered"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:filtered",
+        "item_filter": {
+          "items": "#havoc:r17/curse_equipment"
+        },
+        "on_pass": {
+          "type": "minecraft:enchant_randomly",
+          "options": [
+            "minecraft:binding_curse",
+            "minecraft:vanishing_curse"
+          ],
+          "only_compatible": true
+        }
+      }
+    ]
+  }
+}

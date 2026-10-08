@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dark_prismarine_slab",
+    "minecraft:dark_prismarine_stairs",
+    "minecraft:daylight_detector"
+  ]
+}

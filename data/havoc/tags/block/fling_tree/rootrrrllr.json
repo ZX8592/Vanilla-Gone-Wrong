@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:warped_slab",
+    "minecraft:warped_stairs",
+    "minecraft:warped_stem",
+    "minecraft:warped_trapdoor",
+    "minecraft:warped_wart_block",
+    "minecraft:waxed_chiseled_copper",
+    "minecraft:waxed_copper_bars"
+  ]
+}

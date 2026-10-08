@@ -1,0 +1,23 @@
+{
+  "parent": "havoc:guide/involuntary",
+  "display": {
+    "icon": {
+      "id": "minecraft:wither_rose"
+    },
+    "title": {
+      "text": "身外之物"
+    },
+    "description": {
+      "text": "凋灵之力让快捷栏中的物品乱了套。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

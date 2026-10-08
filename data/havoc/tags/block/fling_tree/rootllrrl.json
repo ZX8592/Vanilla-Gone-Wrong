@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:copper_lantern",
+    "minecraft:copper_ore",
+    "minecraft:copper_torch",
+    "minecraft:copper_trapdoor",
+    "minecraft:cornflower",
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:cracked_deepslate_tiles",
+    "minecraft:cracked_nether_bricks",
+    "minecraft:cracked_polished_blackstone_bricks",
+    "minecraft:cracked_stone_bricks",
+    "minecraft:crafting_table",
+    "minecraft:creaking_heart",
+    "minecraft:creeper_head",
+    "minecraft:crimson_button",
+    "minecraft:crimson_fence"
+  ]
+}

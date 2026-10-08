@@ -1,0 +1,23 @@
+{
+  "parent": "havoc:guide/weight",
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_chestplate"
+    },
+    "title": {
+      "text": "天打雷劈"
+    },
+    "description": {
+      "text": "尝试用金属护甲充当雷暴中的避雷针。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

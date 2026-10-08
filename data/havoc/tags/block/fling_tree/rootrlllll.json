@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:mangrove_wood",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:melon",
+    "minecraft:moss_block",
+    "minecraft:moss_carpet",
+    "minecraft:mossy_cobblestone",
+    "minecraft:mossy_cobblestone_slab"
+  ]
+}

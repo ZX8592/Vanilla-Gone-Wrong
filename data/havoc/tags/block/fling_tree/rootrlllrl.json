@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:nether_wart_block",
+    "minecraft:netherite_block",
+    "minecraft:netherrack",
+    "minecraft:note_block",
+    "minecraft:oak_button",
+    "minecraft:oak_fence",
+    "minecraft:oak_fence_gate"
+  ]
+}

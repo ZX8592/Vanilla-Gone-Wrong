@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "#havoc:herd"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/herd"
+  }
+}

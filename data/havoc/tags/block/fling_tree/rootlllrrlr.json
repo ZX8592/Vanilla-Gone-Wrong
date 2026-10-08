@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:brown_concrete_slab",
+    "minecraft:brown_concrete_stairs",
+    "minecraft:brown_glazed_terracotta",
+    "minecraft:brown_mushroom"
+  ]
+}

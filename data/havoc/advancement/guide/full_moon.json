@@ -1,0 +1,23 @@
+{
+  "parent": "havoc:guide/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": {
+      "text": "月圆之夜"
+    },
+    "description": {
+      "text": "见证满月升起。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

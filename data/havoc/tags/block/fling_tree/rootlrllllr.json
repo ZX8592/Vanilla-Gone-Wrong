@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dead_bubble_coral_block",
+    "minecraft:dead_bubble_coral_fan",
+    "minecraft:dead_bush"
+  ]
+}

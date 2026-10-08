@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:terracotta",
+    "minecraft:tinted_glass",
+    "minecraft:tnt",
+    "minecraft:torch",
+    "minecraft:torchflower",
+    "minecraft:tripwire_hook",
+    "minecraft:tube_coral"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:red_concrete",
+  "result": {
+    "id": "minecraft:red_concrete_stairs",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

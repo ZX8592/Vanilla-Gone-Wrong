@@ -1,0 +1,166 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:magma_cream",
+          "condition": {
+            "terms": [
+              {
+                "term": {
+                  "predicate": {
+                    "source_entity": {
+                      "minecraft:entity_type": "minecraft:frog"
+                    }
+                  },
+                  "type": "minecraft:damage_source_properties"
+                },
+                "type": "minecraft:inverted"
+              },
+              {
+                "entity": "this",
+                "predicate": {
+                  "minecraft:type_specific/cube_mob": {
+                    "size": {
+                      "min": 2
+                    }
+                  }
+                },
+                "type": "minecraft:entity_properties"
+              }
+            ],
+            "type": "minecraft:all_of"
+          },
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 1,
+                  "min": -2
+                },
+                "type": "minecraft:set_count"
+              },
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 1.0,
+                  "min": 0.0
+                },
+                "enchantment": "minecraft:looting",
+                "type": "minecraft:enchanted_count_increase"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pearlescent_froglight",
+          "condition": {
+            "predicate": {
+              "source_entity": {
+                "minecraft:components": {
+                  "minecraft:frog/variant": "minecraft:warm"
+                },
+                "minecraft:entity_type": "minecraft:frog"
+              }
+            },
+            "type": "minecraft:damage_source_properties"
+          },
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:verdant_froglight",
+          "condition": {
+            "predicate": {
+              "source_entity": {
+                "minecraft:components": {
+                  "minecraft:frog/variant": "minecraft:cold"
+                },
+                "minecraft:entity_type": "minecraft:frog"
+              }
+            },
+            "type": "minecraft:damage_source_properties"
+          },
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ochre_froglight",
+          "condition": {
+            "predicate": {
+              "source_entity": {
+                "minecraft:components": {
+                  "minecraft:frog/variant": "minecraft:temperate"
+                },
+                "minecraft:entity_type": "minecraft:frog"
+              }
+            },
+            "type": "minecraft:damage_source_properties"
+          },
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "modifier": {
+            "type": "minecraft:set_custom_data",
+            "tag": "{havoc_event:\"magma_death17\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/magma_cube",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "item_filter": {
+          "items": "#havoc:stack_limited_blocks"
+        },
+        "on_pass": {
+          "components": {
+            "minecraft:max_stack_size": 16
+          },
+          "type": "minecraft:set_components"
+        },
+        "type": "minecraft:filtered"
+      }
+    ]
+  }
+}

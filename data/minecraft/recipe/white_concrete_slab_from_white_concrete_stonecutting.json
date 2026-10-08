@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:white_concrete",
+  "result": {
+    "count": 2,
+    "id": "minecraft:white_concrete_slab",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

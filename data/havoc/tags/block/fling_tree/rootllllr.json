@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bamboo_mosaic",
+    "minecraft:bamboo_mosaic_slab",
+    "minecraft:bamboo_mosaic_stairs",
+    "minecraft:bamboo_planks",
+    "minecraft:bamboo_pressure_plate",
+    "minecraft:bamboo_slab",
+    "minecraft:bamboo_stairs",
+    "minecraft:bamboo_trapdoor",
+    "minecraft:basalt",
+    "minecraft:big_dripleaf",
+    "minecraft:birch_button",
+    "minecraft:birch_fence",
+    "minecraft:birch_fence_gate",
+    "minecraft:birch_leaves",
+    "minecraft:birch_log"
+  ]
+}

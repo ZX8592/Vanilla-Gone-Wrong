@@ -1,0 +1,1 @@
+summon area_effect_cloud ~ ~ ~ {Tags:["havoc.cloud"],Radius:3.0f,Duration:160,WaitTime:0,ReapplicationDelay:20,potion_contents:{custom_effects:[{id:"minecraft:weakness",amplifier:1,duration:300},{id:"minecraft:hunger",amplifier:3,duration:300}]}}

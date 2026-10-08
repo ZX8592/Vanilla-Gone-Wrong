@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:magenta_wool_slab",
+    "minecraft:magenta_wool_stairs",
+    "minecraft:magma_block"
+  ]
+}

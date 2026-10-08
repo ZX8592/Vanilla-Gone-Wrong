@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_pearl"
+    },
+    "title": {
+      "text": "身不由己"
+    },
+    "description": {
+      "text": "身受重创时，口袋里的末影之物可不会乖乖听话！"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "parent": "havoc:guide/root"
+}

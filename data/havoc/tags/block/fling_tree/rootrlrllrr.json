@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:polished_diorite_slab",
+    "minecraft:polished_diorite_stairs",
+    "minecraft:polished_granite",
+    "minecraft:polished_granite_slab"
+  ]
+}

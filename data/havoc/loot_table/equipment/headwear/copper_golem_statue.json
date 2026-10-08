@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_golem_statue"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:exposed_copper_golem_statue"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oxidized_copper_golem_statue"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_copper_golem_statue"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_exposed_copper_golem_statue"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_oxidized_copper_golem_statue"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_weathered_copper_golem_statue"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:weathered_copper_golem_statue"
+        }
+      ]
+    }
+  ]
+}

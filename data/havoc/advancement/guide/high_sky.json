@@ -1,0 +1,23 @@
+{
+  "parent": "havoc:guide/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:phantom_membrane"
+    },
+    "title": {
+      "text": "高处不胜寒"
+    },
+    "description": {
+      "text": "深夜攀上高处，引来夜空中的掠食者。"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

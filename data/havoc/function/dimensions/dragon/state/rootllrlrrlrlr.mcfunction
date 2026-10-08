@@ -1,0 +1,17 @@
+# Generated from the approved checklist; Java 26.3.
+data modify storage havoc:dimension falling set value {"id":"minecraft:cobblestone_wall"}
+execute if block ~ ~ ~ minecraft:cobblestone_wall[east=none] run data modify storage havoc:dimension falling.properties.east set value "none"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[east=low] run data modify storage havoc:dimension falling.properties.east set value "low"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[east=tall] run data modify storage havoc:dimension falling.properties.east set value "tall"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[north=none] run data modify storage havoc:dimension falling.properties.north set value "none"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[north=low] run data modify storage havoc:dimension falling.properties.north set value "low"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[north=tall] run data modify storage havoc:dimension falling.properties.north set value "tall"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[south=none] run data modify storage havoc:dimension falling.properties.south set value "none"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[south=low] run data modify storage havoc:dimension falling.properties.south set value "low"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[south=tall] run data modify storage havoc:dimension falling.properties.south set value "tall"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[up=true] run data modify storage havoc:dimension falling.properties.up set value "true"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[up=false] run data modify storage havoc:dimension falling.properties.up set value "false"
+data modify storage havoc:dimension falling.properties.waterlogged set value "false"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[west=none] run data modify storage havoc:dimension falling.properties.west set value "none"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[west=low] run data modify storage havoc:dimension falling.properties.west set value "low"
+execute if block ~ ~ ~ minecraft:cobblestone_wall[west=tall] run data modify storage havoc:dimension falling.properties.west set value "tall"

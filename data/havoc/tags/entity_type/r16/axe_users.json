@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:blaze",
+    "minecraft:bogged",
+    "minecraft:breeze",
+    "minecraft:cave_spider",
+    "minecraft:creeper",
+    "minecraft:drowned",
+    "minecraft:elder_guardian",
+    "minecraft:enderman",
+    "minecraft:evoker",
+    "minecraft:ghast",
+    "minecraft:guardian",
+    "minecraft:husk",
+    "minecraft:parched",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:pillager",
+    "minecraft:ravager",
+    "minecraft:shulker",
+    "minecraft:silverfish",
+    "minecraft:skeleton",
+    "minecraft:spider",
+    "minecraft:stray",
+    "minecraft:vindicator",
+    "minecraft:witch",
+    "minecraft:wither_skeleton",
+    "minecraft:zombie",
+    "minecraft:zombie_villager",
+    "minecraft:zombified_piglin"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_chestplate"
+    },
+    "title": {
+      "text": "沉重的代价"
+    },
+    "description": {
+      "text": "沉重的盔甲可浮不起来，还会加速饥饿，甚至压沉小船！"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "parent": "havoc:guide/scarcity"
+}

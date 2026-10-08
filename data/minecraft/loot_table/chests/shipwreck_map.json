@@ -1,0 +1,232 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:buried_treasure_map",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "decoration": "minecraft:red_x",
+                "destination": "#minecraft:on_treasure_maps",
+                "skip_existing_chunks": false,
+                "zoom": 1,
+                "type": "minecraft:exploration_map"
+              },
+              {
+                "item_filter": {
+                  "predicates": {
+                    "minecraft:map_id": {}
+                  }
+                },
+                "on_fail": {
+                  "type": "minecraft:discard"
+                },
+                "type": "minecraft:filtered"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 20,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 10,
+                  "min": 1
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "weight": 10,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 5,
+                  "min": 1
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 5,
+                  "min": 1
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 3
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coast_armor_trim_smithing_template",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 2,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 148
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_nautilus_armor",
+          "weight": 20,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nautilus_armor",
+          "weight": 10,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_nautilus_armor",
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_nautilus_armor",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:chests/shipwreck_map",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "type": "minecraft:sequence",
+        "functions": [
+          {
+            "item_filter": {
+              "items": "#havoc:stack_limited_blocks"
+            },
+            "on_pass": {
+              "components": {
+                "minecraft:max_stack_size": 16
+              },
+              "type": "minecraft:set_components"
+            },
+            "type": "minecraft:filtered"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:filtered",
+        "item_filter": {
+          "items": "#havoc:r17/curse_equipment"
+        },
+        "on_pass": {
+          "type": "minecraft:enchant_randomly",
+          "options": [
+            "minecraft:binding_curse",
+            "minecraft:vanishing_curse"
+          ],
+          "only_compatible": true
+        }
+      }
+    ]
+  }
+}

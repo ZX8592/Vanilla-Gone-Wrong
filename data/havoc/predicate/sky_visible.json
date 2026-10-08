@@ -1,0 +1,6 @@
+{
+  "predicate": {
+    "can_see_sky": true
+  },
+  "type": "minecraft:location_check"
+}

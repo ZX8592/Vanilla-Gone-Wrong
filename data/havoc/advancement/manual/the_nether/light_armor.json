@@ -1,0 +1,36 @@
+{
+  "parent": "havoc:manual/overworld/gold",
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_chestplate"
+    },
+    "title": {
+      "text": "皮革与锁链装备-说明"
+    },
+    "description": {
+      "text": "皮革与锁链盔甲不会增加重量，轻装上阵！"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:blast_loot_enabled",
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:the_nether"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

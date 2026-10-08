@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:waxed_oxidized_copper_grate",
+    "minecraft:waxed_oxidized_copper_lantern",
+    "minecraft:waxed_oxidized_copper_trapdoor",
+    "minecraft:waxed_oxidized_cut_copper"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/end_rod"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/spyglass"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/lightning_rod"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/salmon"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/bone"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/fence_gate"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/lead"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/banner"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/feather"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/bed"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/amethyst"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/decorated_pot"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/copper_golem_statue"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/trident"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "havoc:equipment/headwear/shelf_mushroom"
+        }
+      ]
+    }
+  ],
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "tag": "{havoc_headwear:1b}",
+        "type": "minecraft:set_custom_data"
+      },
+      {
+        "item_filter": {
+          "items": "#havoc:stack_limited_blocks"
+        },
+        "on_pass": {
+          "components": {
+            "minecraft:max_stack_size": 16
+          },
+          "type": "minecraft:set_components"
+        },
+        "type": "minecraft:filtered"
+      }
+    ]
+  }
+}

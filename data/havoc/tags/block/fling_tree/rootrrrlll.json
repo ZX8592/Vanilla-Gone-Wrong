@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:tuff_stairs",
+    "minecraft:tuff_wall",
+    "minecraft:turtle_egg",
+    "minecraft:twisting_vines",
+    "minecraft:verdant_froglight",
+    "minecraft:vine",
+    "minecraft:warped_button"
+  ]
+}

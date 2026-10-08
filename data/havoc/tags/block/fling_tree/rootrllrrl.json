@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:pale_oak_planks",
+    "minecraft:pale_oak_pressure_plate",
+    "minecraft:pale_oak_sapling",
+    "minecraft:pale_oak_slab",
+    "minecraft:pale_oak_stairs",
+    "minecraft:pale_oak_trapdoor",
+    "minecraft:pale_oak_wood"
+  ]
+}

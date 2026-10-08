@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:tnt",
+    "minecraft:tnt_minecart",
+    "minecraft:creeper",
+    "minecraft:fireball",
+    "minecraft:wither_skull",
+    "minecraft:end_crystal",
+    "minecraft:wither",
+    "minecraft:sulfur_cube"
+  ]
+}

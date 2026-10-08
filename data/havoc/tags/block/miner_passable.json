@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:replaceable",
+    "#minecraft:climbable",
+    "#minecraft:rails",
+    "#minecraft:buttons",
+    "#minecraft:pressure_plates",
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    "minecraft:soul_torch",
+    "minecraft:soul_wall_torch",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:redstone_wire",
+    "minecraft:tripwire",
+    "minecraft:tripwire_hook"
+  ]
+}

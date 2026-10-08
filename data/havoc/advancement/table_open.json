@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:default_block_use",
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:enchanting_table"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/table_open"
+  }
+}

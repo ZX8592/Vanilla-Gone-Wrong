@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:blackstone",
+  "result": {
+    "id": "minecraft:blackstone_wall",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

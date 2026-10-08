@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ominous_bottle",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              },
+              {
+                "amplifier": {
+                  "type": "minecraft:uniform",
+                  "max": 4,
+                  "min": 0
+                },
+                "type": "minecraft:set_ominous_bottle_amplifier"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1,
+      "condition": {
+        "entity": "this",
+        "predicate": {
+          "minecraft:type_specific/raider": {
+            "is_captain": true
+          }
+        },
+        "type": "minecraft:entity_properties"
+      }
+    }
+  ],
+  "random_sequence": "minecraft:entities/pillager",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "item_filter": {
+          "items": "#havoc:stack_limited_blocks"
+        },
+        "on_pass": {
+          "components": {
+            "minecraft:max_stack_size": 16
+          },
+          "type": "minecraft:set_components"
+        },
+        "type": "minecraft:filtered"
+      }
+    ]
+  }
+}

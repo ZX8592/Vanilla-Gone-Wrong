@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:obsidian",
+    "B": "minecraft:book",
+    "D": "minecraft:diamond"
+  },
+  "pattern": [
+    " B ",
+    "D#D",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:enchanting_table",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

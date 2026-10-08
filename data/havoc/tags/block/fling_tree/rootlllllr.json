@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:amethyst_block",
+    "minecraft:amethyst_cluster",
+    "minecraft:ancient_debris",
+    "minecraft:andesite",
+    "minecraft:andesite_slab",
+    "minecraft:andesite_stairs",
+    "minecraft:andesite_wall"
+  ]
+}

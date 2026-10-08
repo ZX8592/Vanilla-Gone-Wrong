@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:enchantments": {}
+      }
+    },
+    {
+      "type": "minecraft:enchant_randomly",
+      "options": [
+        "minecraft:binding_curse",
+        "minecraft:vanishing_curse"
+      ],
+      "only_compatible": true
+    }
+  ]
+}

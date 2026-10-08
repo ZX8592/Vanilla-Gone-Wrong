@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:large_amethyst_bud",
+    "minecraft:leaf_litter",
+    "minecraft:lever",
+    "minecraft:light",
+    "minecraft:light_blue_candle",
+    "minecraft:light_blue_carpet",
+    "minecraft:light_blue_concrete"
+  ]
+}

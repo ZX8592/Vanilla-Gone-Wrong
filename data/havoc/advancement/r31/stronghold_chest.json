@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "open": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_tables": [
+          "minecraft:chests/stronghold_corridor",
+          "minecraft:chests/stronghold_crossing",
+          "minecraft:chests/stronghold_library"
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:r31/stronghold/open"
+  }
+}

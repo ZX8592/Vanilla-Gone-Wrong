@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:black_stained_glass_pane",
+    "minecraft:black_terracotta",
+    "minecraft:black_wool",
+    "minecraft:black_wool_slab",
+    "minecraft:black_wool_stairs",
+    "minecraft:blackstone",
+    "minecraft:blackstone_slab",
+    "minecraft:blackstone_stairs",
+    "minecraft:blackstone_wall",
+    "minecraft:blue_candle",
+    "minecraft:blue_carpet",
+    "minecraft:blue_concrete",
+    "minecraft:blue_concrete_powder",
+    "minecraft:blue_concrete_slab",
+    "minecraft:blue_concrete_stairs"
+  ]
+}

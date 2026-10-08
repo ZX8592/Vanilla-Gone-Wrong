@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "concrete_slab",
+  "key": {
+    "#": "minecraft:gray_concrete"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "minecraft:gray_concrete_slab",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

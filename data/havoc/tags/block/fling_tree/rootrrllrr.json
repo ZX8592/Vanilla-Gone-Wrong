@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spruce_fence",
+    "minecraft:spruce_fence_gate",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_log",
+    "minecraft:spruce_planks",
+    "minecraft:spruce_pressure_plate",
+    "minecraft:spruce_sapling"
+  ]
+}

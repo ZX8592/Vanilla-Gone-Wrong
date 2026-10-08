@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "#havoc:wither_tick",
+                "expected": true
+              }
+            ]
+          },
+          "blocked": false
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/wither_damage"
+  }
+}

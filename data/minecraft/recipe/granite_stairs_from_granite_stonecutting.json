@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:granite",
+  "result": {
+    "id": "minecraft:granite_stairs",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

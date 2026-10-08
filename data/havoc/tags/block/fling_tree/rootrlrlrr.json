@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:poplar_wood",
+    "minecraft:poppy",
+    "minecraft:potent_sulfur",
+    "minecraft:powered_rail",
+    "minecraft:prismarine",
+    "minecraft:prismarine_brick_slab",
+    "minecraft:prismarine_brick_stairs"
+  ]
+}

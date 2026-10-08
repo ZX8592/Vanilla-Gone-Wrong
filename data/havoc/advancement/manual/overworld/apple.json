@@ -1,0 +1,41 @@
+{
+  "parent": "havoc:manual/overworld/shriekers",
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_golden_apple"
+    },
+    "title": {
+      "text": "附魔金苹果-说明"
+    },
+    "description": {
+      "text": "用八块金块环绕苹果，重拾那段失落的古老秘方。"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:blast_loot_enabled",
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:overworld"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

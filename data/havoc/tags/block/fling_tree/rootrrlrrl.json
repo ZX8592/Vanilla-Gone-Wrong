@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stripped_warped_stem",
+    "minecraft:sugar_cane",
+    "minecraft:sulfur",
+    "minecraft:sulfur_brick_slab",
+    "minecraft:sulfur_brick_stairs",
+    "minecraft:sulfur_brick_wall",
+    "minecraft:sulfur_bricks"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "havoc:manual/overworld/apple",
+  "display": {
+    "icon": {
+      "id": "minecraft:copper_torch"
+    },
+    "title": {
+      "text": "铜火把-说明"
+    },
+    "description": {
+      "text": "铜用不完？试试铜火把，它能在雨中燃烧。"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:blast_loot_enabled",
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

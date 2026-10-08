@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cyan_concrete_slab",
+    "minecraft:cyan_concrete_stairs",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:cyan_stained_glass"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bamboo_trapdoor",
+    "minecraft:basalt",
+    "minecraft:big_dripleaf",
+    "minecraft:birch_button"
+  ]
+}

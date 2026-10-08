@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "predicate": {
+            "dimension": "minecraft:the_nether",
+            "block": {
+              "blocks": "#havoc:nether_imports"
+            }
+          },
+          "type": "minecraft:location_check"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/heated_place"
+  }
+}

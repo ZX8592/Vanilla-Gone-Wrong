@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:zombie_head"
+    },
+    "title": {
+      "text": "大块头有大麻烦"
+    },
+    "description": {
+      "text": "击败一只巨人僵尸。"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:giant",
+            "minecraft:nbt": "{Tags:[\"havoc.giant\"]}"
+          }
+        },
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:survival",
+            "havoc:blast_loot_enabled"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "havoc:guide/root",
+  "rewards": {
+    "experience": 50
+  }
+}

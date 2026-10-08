@@ -1,0 +1,41 @@
+{
+  "parent": "havoc:manual/the_nether/light_armor",
+  "display": {
+    "icon": {
+      "id": "minecraft:dragon_breath"
+    },
+    "title": {
+      "text": "龙息弹-说明"
+    },
+    "description": {
+      "text": "就像弹回恶魂火球那样，把末影龙的龙息弹击退回去！"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:blast_loot_enabled",
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_end"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

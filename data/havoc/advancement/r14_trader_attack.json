@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wandering_trader"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/r14_trader_attack"
+  }
+}

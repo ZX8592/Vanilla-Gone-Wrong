@@ -1,0 +1,13 @@
+{
+  "gives": {
+    "count": 8,
+    "id": "minecraft:spruce_log",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  },
+  "reputation_discount": 0.05,
+  "wants": {
+    "id": "minecraft:emerald"
+  }
+}

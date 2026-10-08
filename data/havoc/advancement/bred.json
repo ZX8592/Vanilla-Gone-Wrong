@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/bred"
+  }
+}

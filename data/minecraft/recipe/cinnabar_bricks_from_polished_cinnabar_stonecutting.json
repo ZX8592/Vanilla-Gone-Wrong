@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:polished_cinnabar",
+  "result": {
+    "id": "minecraft:cinnabar_bricks",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

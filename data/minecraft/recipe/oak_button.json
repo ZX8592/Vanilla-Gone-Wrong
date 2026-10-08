@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    "minecraft:oak_planks"
+  ],
+  "result": {
+    "id": "minecraft:oak_button",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

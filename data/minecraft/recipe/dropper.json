@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "minecraft:cobblestone",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "#R#"
+  ],
+  "result": {
+    "id": "minecraft:dropper",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

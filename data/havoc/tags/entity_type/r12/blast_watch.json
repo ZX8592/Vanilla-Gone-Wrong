@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:fireball",
+    "minecraft:wither_skull",
+    "minecraft:wind_charge",
+    "minecraft:breeze_wind_charge",
+    "minecraft:end_crystal"
+  ]
+}

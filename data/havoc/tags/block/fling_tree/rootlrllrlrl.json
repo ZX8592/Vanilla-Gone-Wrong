@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:detector_rail",
+    "minecraft:diamond_block"
+  ]
+}

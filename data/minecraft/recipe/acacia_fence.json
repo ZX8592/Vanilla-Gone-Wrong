@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "minecraft:acacia_planks"
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "count": 3,
+    "id": "minecraft:acacia_fence",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

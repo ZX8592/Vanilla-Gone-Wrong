@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spawner",
+    "minecraft:trial_spawner",
+    "minecraft:sculk_shrieker",
+    "minecraft:potent_sulfur",
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    "minecraft:nether_portal",
+    "minecraft:chest",
+    "minecraft:trapped_chest"
+  ]
+}

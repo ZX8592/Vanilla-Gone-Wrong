@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:sulfur",
+  "result": {
+    "id": "minecraft:sulfur_stairs",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

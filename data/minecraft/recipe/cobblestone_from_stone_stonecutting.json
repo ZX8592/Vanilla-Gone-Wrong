@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:stone",
+  "result": {
+    "id": "minecraft:cobblestone",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

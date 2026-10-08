@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:default_block_use",
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:match_block",
+              "blocks": [
+                "minecraft:chest",
+                "minecraft:trapped_chest"
+              ]
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "structures": "#minecraft:village"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/r19_village_chest"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:oak_leaves",
+    "minecraft:oak_log",
+    "minecraft:oak_planks",
+    "minecraft:oak_pressure_plate"
+  ]
+}

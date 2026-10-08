@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:fire_coral",
+    "minecraft:fire_coral_block",
+    "minecraft:fire_coral_fan",
+    "minecraft:firefly_bush",
+    "minecraft:fletching_table",
+    "minecraft:flower_pot",
+    "minecraft:flowering_azalea"
+  ]
+}

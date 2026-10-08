@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:piglin"
+          }
+        },
+        "damage": {
+          "dealt": {
+            "min": 0.001
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:r43/piglin/hurt"
+  }
+}

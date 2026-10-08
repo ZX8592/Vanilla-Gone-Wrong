@@ -1,0 +1,15 @@
+execute positioned ~3 ~ ~-7 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~-6 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~-5 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~-4 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~-3 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~-2 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~-1 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~ if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~1 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~2 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~3 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~4 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~5 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~6 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}
+execute positioned ~3 ~ ~7 if block ~ ~ ~ end_stone if predicate havoc:chance/10 run summon marker ~ ~ ~ {Tags:["havoc.dragon_stone_watch"]}

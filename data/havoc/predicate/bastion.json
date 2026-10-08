@@ -1,0 +1,6 @@
+{
+  "predicate": {
+    "structures": "minecraft:bastion_remnant"
+  },
+  "type": "minecraft:location_check"
+}

@@ -1,0 +1,9 @@
+execute positioned ~-1 ~ ~-1 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire
+execute positioned ~-1 ~ ~0 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire
+execute positioned ~-1 ~ ~1 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire
+execute positioned ~0 ~ ~-1 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire
+execute positioned ~0 ~ ~0 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire
+execute positioned ~0 ~ ~1 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire
+execute positioned ~1 ~ ~-1 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire
+execute positioned ~1 ~ ~0 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire
+execute positioned ~1 ~ ~1 if block ~ ~ ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable unless block ~ ~-1 ~ lava run setblock ~ ~ ~ fire

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:respawn_anchor",
+    "minecraft:rooted_dirt",
+    "minecraft:sand",
+    "minecraft:sandstone",
+    "minecraft:sandstone_slab",
+    "minecraft:sandstone_stairs",
+    "minecraft:sandstone_wall"
+  ]
+}

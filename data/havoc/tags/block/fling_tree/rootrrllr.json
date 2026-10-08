@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:smooth_sandstone",
+    "minecraft:smooth_sandstone_slab",
+    "minecraft:smooth_sandstone_stairs",
+    "minecraft:smooth_stone",
+    "minecraft:smooth_stone_slab",
+    "minecraft:sniffer_egg",
+    "minecraft:snow",
+    "minecraft:snow_block",
+    "minecraft:soul_lantern",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:soul_torch",
+    "minecraft:sponge",
+    "minecraft:spore_blossom",
+    "minecraft:spruce_button"
+  ]
+}

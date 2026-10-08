@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:blue_wool_slab",
+    "minecraft:blue_wool_stairs",
+    "minecraft:bone_block",
+    "minecraft:bookshelf"
+  ]
+}

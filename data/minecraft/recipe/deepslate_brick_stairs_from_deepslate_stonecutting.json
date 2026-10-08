@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:deepslate",
+  "result": {
+    "id": "minecraft:deepslate_brick_stairs",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:pale_oak_planks",
+    "minecraft:pale_oak_pressure_plate",
+    "minecraft:pale_oak_sapling",
+    "minecraft:pale_oak_slab",
+    "minecraft:pale_oak_stairs",
+    "minecraft:pale_oak_trapdoor",
+    "minecraft:pale_oak_wood",
+    "minecraft:pearlescent_froglight",
+    "minecraft:petrified_oak_slab",
+    "minecraft:piglin_head",
+    "minecraft:pink_candle",
+    "minecraft:pink_carpet",
+    "minecraft:pink_concrete",
+    "minecraft:pink_concrete_powder",
+    "minecraft:pink_concrete_slab"
+  ]
+}

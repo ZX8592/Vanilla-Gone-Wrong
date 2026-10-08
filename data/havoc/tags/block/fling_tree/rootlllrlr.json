@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:blue_glazed_terracotta",
+    "minecraft:blue_ice",
+    "minecraft:blue_orchid",
+    "minecraft:blue_stained_glass",
+    "minecraft:blue_stained_glass_pane",
+    "minecraft:blue_terracotta",
+    "minecraft:blue_wool"
+  ]
+}

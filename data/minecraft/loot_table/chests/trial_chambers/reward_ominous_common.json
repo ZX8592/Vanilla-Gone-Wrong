@@ -1,0 +1,144 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 10,
+                  "min": 4
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wind_charge",
+          "weight": 4,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 12,
+                  "min": 8
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 12,
+                  "min": 4
+                },
+                "type": "minecraft:set_count"
+              },
+              {
+                "id": "minecraft:strong_slowness",
+                "type": "minecraft:set_potion"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3,
+                  "min": 2
+                },
+                "type": "minecraft:set_count"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ominous_bottle",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "count": 1,
+                "type": "minecraft:set_count"
+              },
+              {
+                "amplifier": {
+                  "type": "minecraft:uniform",
+                  "max": 4,
+                  "min": 2
+                },
+                "type": "minecraft:set_ominous_bottle_amplifier"
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:chests/trial_chambers/reward_ominous_common",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "type": "minecraft:sequence",
+        "functions": [
+          {
+            "item_filter": {
+              "items": "#havoc:stack_limited_blocks"
+            },
+            "on_pass": {
+              "components": {
+                "minecraft:max_stack_size": 16
+              },
+              "type": "minecraft:set_components"
+            },
+            "type": "minecraft:filtered"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:filtered",
+        "item_filter": {
+          "items": "#havoc:r17/curse_equipment"
+        },
+        "on_pass": {
+          "type": "minecraft:enchant_randomly",
+          "options": [
+            "minecraft:binding_curse",
+            "minecraft:vanishing_curse"
+          ],
+          "only_compatible": true
+        }
+      }
+    ]
+  }
+}

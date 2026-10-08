@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "minecraft:bubble_column",
+    "minecraft:cave_air",
+    "minecraft:fern",
+    "minecraft:fire",
+    "minecraft:kelp",
+    "minecraft:kelp_plant",
+    "minecraft:large_fern",
+    "minecraft:seagrass",
+    "minecraft:short_grass",
+    "minecraft:soul_fire",
+    "minecraft:tall_grass",
+    "minecraft:tall_seagrass",
+    "minecraft:void_air",
+    "minecraft:water"
+  ]
+}

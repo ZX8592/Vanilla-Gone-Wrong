@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:sandstone",
+  "result": {
+    "id": "minecraft:sandstone_stairs",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

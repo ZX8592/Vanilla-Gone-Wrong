@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:slime"
+          }
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "#minecraft:is_projectile",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/sticky_weapon"
+  }
+}

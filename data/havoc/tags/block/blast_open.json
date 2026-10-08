@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#havoc:air",
+    "minecraft:fire",
+    "minecraft:soul_fire"
+  ]
+}

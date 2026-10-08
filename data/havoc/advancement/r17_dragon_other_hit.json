@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:ender_dragon"
+          }
+        },
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:entity_type": "#havoc:r17/other_damage_entities"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/r17_dragon_other_hit"
+  }
+}

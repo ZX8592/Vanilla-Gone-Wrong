@@ -1,0 +1,10 @@
+{
+  "predicate": {
+    "position": {
+      "y": {
+        "max": -1e-05
+      }
+    }
+  },
+  "type": "minecraft:location_check"
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:exposed_copper",
+    "minecraft:exposed_copper_bars",
+    "minecraft:exposed_copper_bulb",
+    "minecraft:exposed_copper_chain",
+    "minecraft:exposed_copper_door",
+    "minecraft:exposed_copper_golem_statue",
+    "minecraft:exposed_copper_grate"
+  ]
+}

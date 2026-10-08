@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:warped_slab",
+    "minecraft:warped_stairs",
+    "minecraft:warped_stem"
+  ]
+}

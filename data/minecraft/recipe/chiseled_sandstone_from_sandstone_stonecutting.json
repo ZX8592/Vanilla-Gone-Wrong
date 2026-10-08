@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:sandstone",
+  "result": {
+    "id": "minecraft:chiseled_sandstone",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

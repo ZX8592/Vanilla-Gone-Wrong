@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:basalt",
+  "result": {
+    "id": "minecraft:polished_basalt",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

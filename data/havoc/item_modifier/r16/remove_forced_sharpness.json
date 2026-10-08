@@ -1,0 +1,6 @@
+{
+  "enchantments": {
+    "minecraft:sharpness": 0
+  },
+  "type": "minecraft:set_enchantments"
+}

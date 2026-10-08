@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spruce_slab",
+    "minecraft:spruce_stairs",
+    "minecraft:spruce_trapdoor",
+    "minecraft:spruce_wood"
+  ]
+}

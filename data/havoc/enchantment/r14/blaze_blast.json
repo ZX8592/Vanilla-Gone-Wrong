@@ -1,0 +1,51 @@
+{
+  "description": {
+    "text": "失控：r14/blaze_blast"
+  },
+  "supported_items": "minecraft:stick",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:explode",
+              "attribute_to_user": false,
+              "damage_type": "minecraft:explosion",
+              "radius": 2.0,
+              "knockback_multiplier": 1.0,
+              "block_interaction": "none",
+              "create_fire": false,
+              "small_particle": {
+                "type": "minecraft:explosion"
+              },
+              "large_particle": {
+                "type": "minecraft:explosion_emitter"
+              },
+              "sound": "minecraft:entity.generic.explode"
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "havoc:r14/blaze/cleanup"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

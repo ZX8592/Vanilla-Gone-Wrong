@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "#havoc:r17/sonic",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/r17_sonic"
+  }
+}

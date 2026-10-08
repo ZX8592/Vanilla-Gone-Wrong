@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:shearing",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "minecraft:shearing/mooshroom/red",
+              "condition": {
+                "entity": "this",
+                "predicate": {
+                  "minecraft:components": {
+                    "minecraft:mooshroom/variant": "red"
+                  }
+                },
+                "type": "minecraft:entity_properties"
+              }
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "minecraft:shearing/mooshroom/brown",
+              "condition": {
+                "entity": "this",
+                "predicate": {
+                  "minecraft:components": {
+                    "minecraft:mooshroom/variant": "brown"
+                  }
+                },
+                "type": "minecraft:entity_properties"
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:shearing/mooshroom",
+  "modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "item_filter": {
+          "items": "#havoc:stack_limited_blocks"
+        },
+        "on_pass": {
+          "components": {
+            "minecraft:max_stack_size": 16
+          },
+          "type": "minecraft:set_components"
+        },
+        "type": "minecraft:filtered"
+      }
+    ]
+  }
+}

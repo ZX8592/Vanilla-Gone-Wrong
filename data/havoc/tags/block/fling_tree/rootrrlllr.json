@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:short_dry_grass",
+    "minecraft:short_grass",
+    "minecraft:shroomlight",
+    "minecraft:skeleton_skull",
+    "minecraft:slime_block",
+    "minecraft:small_amethyst_bud",
+    "minecraft:small_dripleaf"
+  ]
+}

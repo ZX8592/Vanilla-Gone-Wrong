@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:mud_bricks",
+  "result": {
+    "id": "minecraft:mud_brick_wall",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

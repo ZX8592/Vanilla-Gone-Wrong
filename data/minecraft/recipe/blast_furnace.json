@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:smooth_stone",
+    "I": "minecraft:iron_ingot",
+    "X": "minecraft:furnace"
+  },
+  "pattern": [
+    "III",
+    "IXI",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:blast_furnace",
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

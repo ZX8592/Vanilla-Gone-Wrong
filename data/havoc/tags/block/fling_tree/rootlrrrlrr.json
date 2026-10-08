@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lime_concrete_powder",
+    "minecraft:lime_concrete_slab",
+    "minecraft:lime_concrete_stairs",
+    "minecraft:lime_glazed_terracotta"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "enchantments": {
+    "havoc:sweep": 0,
+    "havoc:axe_break": 1
+  },
+  "type": "minecraft:set_enchantments"
+}

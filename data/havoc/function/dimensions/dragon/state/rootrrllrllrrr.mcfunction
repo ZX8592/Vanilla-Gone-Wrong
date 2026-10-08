@@ -1,0 +1,10 @@
+# Generated from the approved checklist; Java 26.3.
+data modify storage havoc:dimension falling set value {"id":"minecraft:snow"}
+execute if block ~ ~ ~ minecraft:snow[layers=1] run data modify storage havoc:dimension falling.properties.layers set value "1"
+execute if block ~ ~ ~ minecraft:snow[layers=2] run data modify storage havoc:dimension falling.properties.layers set value "2"
+execute if block ~ ~ ~ minecraft:snow[layers=3] run data modify storage havoc:dimension falling.properties.layers set value "3"
+execute if block ~ ~ ~ minecraft:snow[layers=4] run data modify storage havoc:dimension falling.properties.layers set value "4"
+execute if block ~ ~ ~ minecraft:snow[layers=5] run data modify storage havoc:dimension falling.properties.layers set value "5"
+execute if block ~ ~ ~ minecraft:snow[layers=6] run data modify storage havoc:dimension falling.properties.layers set value "6"
+execute if block ~ ~ ~ minecraft:snow[layers=7] run data modify storage havoc:dimension falling.properties.layers set value "7"
+execute if block ~ ~ ~ minecraft:snow[layers=8] run data modify storage havoc:dimension falling.properties.layers set value "8"

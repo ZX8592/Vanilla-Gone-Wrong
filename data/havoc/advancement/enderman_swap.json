@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:enderman"
+          },
+          "blocked": false
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:event/enderman_swap"
+  }
+}
