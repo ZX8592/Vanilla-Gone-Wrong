@@ -93,11 +93,13 @@ execute as @e[distance=0..,type=fireball,tag=havoc.ghast_wait] at @s run functio
 execute as @e[distance=0..,type=tnt_minecart,tag=havoc.phantom_tnt] run function havoc:revision11/phantom_cart
 execute as @e[distance=0..,type=drowned,tag=!havoc.drowned_speed11] at @s run function havoc:mob/init/drowned
 execute store result score #r12_grief h.tmp run gamerule minecraft:mob_griefing
-execute if score #r12_grief h.tmp matches 1 as @e[distance=0..,type=zombie] at @s if items entity @s weapon.mainhand #minecraft:pickaxes unless entity @s[nbt={NoAI:1b}] run function havoc:r12/miner/tick
+execute if score #r12_grief h.tmp matches 1 as @e[distance=0..,type=#havoc:undead] at @s if items entity @s weapon.mainhand #minecraft:pickaxes unless entity @s[nbt={NoAI:1b}] run function havoc:r12/miner/tick
 execute if dimension minecraft:overworld as @a[tag=havoc.deep_slow,gamemode=!survival,gamemode=!adventure] run function havoc:r12/mining/remove
-execute if score #terrain_grief h.tmp matches 1 as @e[distance=0..,type=zombie] at @s if predicate havoc:r24/on_ground positioned ~ ~-0.1 ~ align xyz run function havoc:r12/terrain/zombie
+execute if score #terrain_grief h.tmp matches 1 as @e[distance=0..,type=#havoc:r45/moss_hosts,tag=!havoc.sculk31] at @s if predicate havoc:r24/on_ground positioned ~ ~-0.1 ~ align xyz run function havoc:r12/terrain/zombie
+execute if score #terrain_grief h.tmp matches 1 as @e[distance=0..,type=#havoc:undead,tag=havoc.sculk31] at @s if entity @a[distance=..96,gamemode=!spectator] if predicate havoc:r24/on_ground positioned ~ ~-0.1 ~ align xyz run function havoc:r31/sculk/feet
 execute if score #terrain_grief h.tmp matches 1 as @e[distance=0..,type=magma_cube] at @s if predicate havoc:r24/on_ground positioned ~ ~-0.1 ~ align xyz run function havoc:r12/terrain/magma_cube
 execute if score #terrain_grief h.tmp matches 1 as @e[distance=0..,type=zombified_piglin] at @s if predicate havoc:r24/on_ground positioned ~ ~-0.1 ~ align xyz run function havoc:r12/terrain/zombified_piglin
+execute if score #slow_even23 h.tmp matches 0 if score #r12_grief h.tmp matches 1 as @e[distance=0..,type=#havoc:r47/farmland_tramplers] at @s if block ~ ~-0.1 ~ minecraft:farmland if predicate havoc:r24/on_ground unless entity @s[nbt={Health:0.0f}] run setblock ~ ~-0.1 ~ minecraft:dirt
 execute if score #second h.time matches 0 run function havoc:r23/crystal/frame
 execute if score #second h.time matches 10 run function havoc:r23/crystal/frame
 execute if score #r12_grief h.tmp matches 1 as @e[distance=0..,type=ravager] at @s rotated ~ 0 run function havoc:r12/ravager/front

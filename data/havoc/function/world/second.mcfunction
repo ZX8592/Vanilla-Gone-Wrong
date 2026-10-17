@@ -24,7 +24,7 @@ execute if dimension minecraft:the_end as @e[type=end_crystal,tag=!havoc.pillar_
 execute as @e[distance=0..,type=#minecraft:undead] at @s unless entity @s[nbt={Health:0.0f}] if entity @e[type=end_crystal,distance=..24] run function havoc:revision/crystal_heal
 execute as @e[distance=0..,type=zombified_piglin] at @s run function havoc:r12/piglin_anger
 execute as @e[distance=0..,type=#havoc:r12/elite,tag=!havoc.depth_checked] at @s run function havoc:r12/elite_roll
-execute as @e[distance=0..,type=zombie] at @s run function havoc:r12/zombie_target
+execute as @e[distance=0..,type=#havoc:undead] at @s run function havoc:r12/zombie_target
 execute unless dimension minecraft:the_end run function havoc:portal/second
 execute if dimension minecraft:overworld if score #moon_active24 h.tmp matches 1 run advancement grant @a[gamemode=!creative,gamemode=!spectator,advancements={havoc:guide/full_moon=false}] only havoc:guide/full_moon
 execute as @e[distance=0..,type=piglin] at @s run function havoc:r13/piglin/target

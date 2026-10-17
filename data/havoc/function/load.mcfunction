@@ -84,7 +84,7 @@ scoreboard players set #20 h.tmp 20
 scoreboard players set #clock h.time 0
 function havoc:r13/falling/setup
 function havoc:r16/setup
-tellraw @a {"text":"[原版失控 V1.44]  by 风ノ夏 数据包已加载","color":"dark_red"}
+tellraw @a {"text":"[原版失控 V1.49]  by 风ノ夏 数据包已加载","color":"dark_red"}
 scoreboard objectives add h.r17_weight dummy
 scoreboard objectives add h.r17_pull dummy
 scoreboard objectives add h.r17_cd dummy

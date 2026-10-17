@@ -1,6 +1,7 @@
 setblock ~ ~ ~ minecraft:sculk_catalyst[bloom=true]
 scoreboard players set #xp_collected31 h.tmp 0
 function havoc:r31/death/collect with storage havoc:r31 death
+execute if score #xp_collected31 h.tmp matches ..4 run scoreboard players set #xp_collected31 h.tmp 5
 execute store result storage havoc:r31 charge.x int 1 run data get storage havoc:r31 death.x
 execute store result storage havoc:r31 charge.y int 1 run data get storage havoc:r31 death.y
 execute store result storage havoc:r31 charge.z int 1 run data get storage havoc:r31 death.z

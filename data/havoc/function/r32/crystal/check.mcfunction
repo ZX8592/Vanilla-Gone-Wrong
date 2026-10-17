@@ -1,6 +1,5 @@
 scoreboard players set #reattached32 h.tmp 0
-execute on vehicle if entity @s[type=zombie,nbt=!{Health:0.0f}] run scoreboard players set #reattached32 h.tmp 1
-execute on vehicle if entity @s[type=drowned,nbt=!{Health:0.0f}] run scoreboard players set #reattached32 h.tmp 1
+execute on vehicle if entity @s[type=#havoc:undead,nbt=!{Health:0.0f}] run scoreboard players set #reattached32 h.tmp 1
 execute on vehicle if entity @s[type=iron_golem,nbt=!{Health:0.0f}] run scoreboard players set #reattached32 h.tmp 1
 execute if score #reattached32 h.tmp matches 1 run return run function havoc:r32/crystal/reattach
 tag @s add havoc.crystal_abandoned32

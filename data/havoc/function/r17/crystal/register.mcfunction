@@ -1,5 +1,4 @@
-execute if entity @s[type=zombie] on passengers if entity @s[type=end_crystal] run tag @s add havoc.zombie_crystal23
-execute if entity @s[type=drowned] on passengers if entity @s[type=end_crystal] run tag @s add havoc.zombie_crystal23
+execute if entity @s[type=#havoc:undead] on passengers if entity @s[type=end_crystal] run tag @s add havoc.zombie_crystal23
 execute unless score @s h.mountid matches 1.. run function havoc:r14/mount/id
 scoreboard players operation #crystal_owner h.tmp = @s h.mountid
 execute on passengers if entity @s[type=end_crystal] run scoreboard players operation @s h.mountid = #crystal_owner h.tmp

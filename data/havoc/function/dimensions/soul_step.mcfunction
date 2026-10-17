@@ -1,4 +1,5 @@
 # Generated from the approved checklist; Java 26.3.
+execute if items entity @s armor.feet *[minecraft:enchantments~[{enchantments:"minecraft:frost_walker",levels:{min:1}}]] run return 0
 execute unless block ~ ~ ~ #havoc:air run return 0
 execute if entity @e[type=marker,tag=havoc.soul_delay,distance=..0.1] run return 0
 summon marker ~ ~ ~ {Tags:["havoc.soul_delay","havoc.soul_new"]}

@@ -1,3 +1,4 @@
+execute if entity @s[nbt={IsBaby:1b}] run return 0
 execute store result score #piglin_hurt43 h.tmp run data get entity @s HurtTime
 execute unless score #piglin_hurt43 h.tmp matches 1..10 run return 0
 scoreboard players set #piglin_player43 h.tmp 0
