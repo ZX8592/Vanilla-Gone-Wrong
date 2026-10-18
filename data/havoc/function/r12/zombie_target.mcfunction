@@ -1,3 +1,4 @@
+execute if entity @s[type=#havoc:r25/wall_spiders] anchored eyes positioned ^ ^ ^ unless predicate havoc:r50/spider_dark run return 0
 # Generated from the approved checklist; Java 26.3.
 execute if entity @s[nbt={NoAI:1b}] run return 0
 scoreboard players set #has_target h.tmp 0

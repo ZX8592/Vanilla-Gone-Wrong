@@ -254,6 +254,64 @@
           }
         ]
       }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "tag": "{havoc_event:\"leaf\"}",
+                "type": "minecraft:set_custom_data"
+              }
+            ]
+          }
+        }
+      ],
+      "condition": {
+        "type": "minecraft:any_of",
+        "terms": [
+          {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:entity_type": "minecraft:player"
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.08
+              }
+            ]
+          },
+          {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:inverted",
+                "term": {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:entity_type": "minecraft:player"
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.02
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "random_sequence": "minecraft:blocks/bush",
@@ -515,32 +573,12 @@
                               "type": "minecraft:inverted"
                             },
                             {
-                              "type": "minecraft:any_of",
-                              "terms": [
-                                {
-                                  "type": "minecraft:all_of",
-                                  "terms": [
-                                    "minecraft:tool/can_silk_touch",
-                                    {
-                                      "type": "minecraft:random_chance",
-                                      "chance": 0.5
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "minecraft:all_of",
-                                  "terms": [
-                                    {
-                                      "type": "minecraft:inverted",
-                                      "term": "minecraft:tool/can_silk_touch"
-                                    },
-                                    {
-                                      "type": "minecraft:random_chance",
-                                      "chance": 0.875
-                                    }
-                                  ]
-                                }
-                              ]
+                              "type": "minecraft:inverted",
+                              "term": "minecraft:tool/can_silk_touch"
+                            },
+                            {
+                              "type": "minecraft:random_chance",
+                              "chance": 0.75
                             }
                           ]
                         }

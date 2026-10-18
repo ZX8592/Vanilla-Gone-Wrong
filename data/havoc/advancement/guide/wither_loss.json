@@ -8,7 +8,7 @@
       "text": "身外之物"
     },
     "description": {
-      "text": "凋灵之力让快捷栏中的物品乱了套。"
+      "text": "凋灵之力让快捷栏和副手中的物品乱了套。"
     },
     "frame": "task",
     "show_toast": true,

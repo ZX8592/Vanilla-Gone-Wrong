@@ -30,7 +30,30 @@
           }
         }
       ],
-      "rolls": 1
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:inverted",
+        "term": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:nbt": "{RabbitType:99}"
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {}
+            }
+          ]
+        }
+      }
     },
     {
       "entries": [
@@ -91,7 +114,30 @@
           }
         }
       ],
-      "rolls": 1
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:inverted",
+        "term": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:nbt": "{RabbitType:99}"
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {}
+            }
+          ]
+        }
+      }
     },
     {
       "entries": [
@@ -102,23 +148,100 @@
       ],
       "rolls": 1,
       "condition": {
+        "type": "minecraft:all_of",
         "terms": [
           {
-            "type": "minecraft:killed_by_player"
+            "terms": [
+              {
+                "type": "minecraft:killed_by_player"
+              },
+              {
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.13,
+                  "per_level_above_first": 0.03
+                },
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.1,
+                "type": "minecraft:random_chance_with_enchanted_bonus"
+              }
+            ],
+            "type": "minecraft:all_of"
           },
           {
-            "enchanted_chance": {
-              "type": "minecraft:linear",
-              "base": 0.13,
-              "per_level_above_first": 0.03
-            },
-            "enchantment": "minecraft:looting",
-            "unenchanted_chance": 0.1,
-            "type": "minecraft:random_chance_with_enchanted_bonus"
+            "type": "minecraft:inverted",
+            "term": {
+              "type": "minecraft:all_of",
+              "terms": [
+                {
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "minecraft:nbt": "{RabbitType:99}"
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "attacker",
+                  "predicate": {}
+                }
+              ]
+            }
           }
-        ],
-        "type": "minecraft:all_of"
+        ]
       }
+    },
+    {
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "minecraft:inverted",
+            "term": {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:nbt": "{RabbitType:99}"
+              }
+            }
+          },
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "attacker",
+            "predicate": {}
+          }
+        ]
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_custom_data",
+                "tag": "{havoc_event:\"rabbit50\"}"
+              },
+              {
+                "type": "minecraft:copy_custom_data",
+                "source": "this",
+                "ops": [
+                  {
+                    "source": "{}",
+                    "target": "rabbit",
+                    "op": "replace"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:entities/rabbit",

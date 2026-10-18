@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "havoc:crystal_backlash"
+    "havoc:crystal_backlash",
+    "havoc:shield_push50"
   ]
 }

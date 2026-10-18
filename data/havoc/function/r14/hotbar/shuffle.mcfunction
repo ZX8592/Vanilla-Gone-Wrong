@@ -1,5 +1,7 @@
 # Generated from the approved checklist; Java 26.3.
 summon item ~ ~ ~ {Tags:["havoc.shuffle_buffer"],PickupDelay:32767s,Item:{id:"minecraft:stone",count:1}}
+data modify storage havoc:r14 shuffle.slots set value ["hotbar.0","hotbar.1","hotbar.2","hotbar.3","hotbar.4","hotbar.5","hotbar.6","hotbar.7","hotbar.8","weapon.offhand"]
+execute if items entity @s weapon.offhand * run function havoc:r14/hotbar/offhand_step
 execute store result storage havoc:r14 shuffle.j int 1 run random value 0..8
 data modify storage havoc:r14 shuffle.i set value 8
 function havoc:r14/hotbar/swap with storage havoc:r14 shuffle

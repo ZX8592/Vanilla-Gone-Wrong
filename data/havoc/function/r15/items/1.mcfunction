@@ -9,3 +9,6 @@ execute if items entity @s contents minecraft:structure_void[minecraft:custom_da
 execute if items entity @s contents minecraft:structure_void[minecraft:custom_data~{havoc_event:"aquatic_plant27"}] run function havoc:r27/plants/guardian
 
 execute if items entity @s contents minecraft:structure_void[minecraft:custom_data~{havoc_event:"fish_death37"}] run function havoc:r27/plants/guardian
+
+execute if items entity @s contents minecraft:structure_void[minecraft:custom_data~{havoc_event:"flower50"}] align xyz run function havoc:r50/flower/event
+execute if items entity @s contents minecraft:structure_void[minecraft:custom_data~{havoc_event:"rabbit50"}] run function havoc:r50/rabbit/event

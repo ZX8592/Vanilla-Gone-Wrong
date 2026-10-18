@@ -1,3 +1,4 @@
+execute as @a[tag=havoc.shield_blast50] run function havoc:r50/shield/clear_blast
 execute unless data storage havoc:r37 {notice_sent:1b} if entity @a run function havoc:r37/notice
 # Generated from the approved checklist; Java 26.3.
 execute unless score #enabled h.cfg matches 1 run return 0

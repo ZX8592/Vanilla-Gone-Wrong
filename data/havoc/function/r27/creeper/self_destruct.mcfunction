@@ -1,1 +1,1 @@
-data merge entity @s {Fuse:0s,ignited:1b}
+data merge entity @s {Fuse:30s,ignited:1b}

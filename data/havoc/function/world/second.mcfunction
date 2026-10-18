@@ -46,7 +46,7 @@ execute as @e[distance=0..,type=#havoc:r23/size_animals,tag=!havoc.size23,nbt=!{
 execute as @e[distance=0..,type=#havoc:r23/size_fishes,tag=!havoc.size23,nbt=!{Health:0.0f}] at @s run function havoc:r23/size/fishes
 
 execute as @e[distance=0..,type=creeper,nbt=!{Health:0.0f}] at @s run function havoc:r25/wall_target {range:16}
-execute as @e[distance=0..,type=#havoc:r25/wall_spiders,nbt=!{Health:0.0f}] at @s run function havoc:r25/wall_target {range:16}
+execute as @e[distance=0..,type=#havoc:r25/wall_spiders,nbt=!{Health:0.0f}] at @s run function havoc:r50/spider/target
 execute as @e[distance=0..,type=#havoc:r25/wall_skeletons,nbt=!{Health:0.0f}] at @s run function havoc:r25/wall_target {range:16}
 
 execute as @e[distance=0..,type=creeper,tag=!havoc.synthetic,nbt=!{Health:0.0f}] at @s if entity @a[gamemode=!creative,gamemode=!spectator,distance=..8] if predicate havoc:chance/4 run function havoc:r27/creeper/self_destruct

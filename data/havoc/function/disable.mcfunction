@@ -1,5 +1,6 @@
 # Generated from the approved checklist; Java 26.3.
 scoreboard players set #enabled h.cfg 0
+execute as @a[tag=havoc.shield_blast50] run function havoc:r50/shield/clear_blast
 execute as @a run attribute @s minecraft:gravity modifier remove havoc:heavy_water
 execute in minecraft:overworld run function havoc:creeper/clear_signals
 execute in minecraft:the_nether run function havoc:creeper/clear_signals
