@@ -17,10 +17,6 @@
         "effect": {
           "type": "minecraft:multiply",
           "factor": 2.0
-        },
-        "requirements": {
-          "type": "minecraft:random_chance",
-          "chance": 0.5
         }
       }
     ]

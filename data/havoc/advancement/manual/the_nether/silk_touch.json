@@ -1,0 +1,36 @@
+{
+  "parent": "havoc:manual/the_nether/light_armor",
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book"
+    },
+    "title": {
+      "text": "精准采集-说明"
+    },
+    "description": {
+      "text": "它能让你快速获取方块，但工具需要承受双倍磨损"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "havoc:blast_loot_enabled",
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:the_nether"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

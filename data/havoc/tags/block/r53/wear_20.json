@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:crying_obsidian",
+    "minecraft:lava",
+    "minecraft:netherite_block",
+    "minecraft:obsidian",
+    "minecraft:reinforced_deepslate",
+    "minecraft:respawn_anchor",
+    "minecraft:trial_spawner",
+    "minecraft:vault",
+    "minecraft:water"
+  ]
+}

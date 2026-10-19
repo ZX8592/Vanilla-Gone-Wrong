@@ -1,5 +1,7 @@
 # Generated from the approved checklist; Java 26.3.
 function havoc:player/armor
+execute if items entity @s container.* #minecraft:pickaxes[minecraft:custom_data~{havoc_wear53:{}}] run function havoc:r53/wear/restore_nonheld
+execute unless items entity @s container.* #minecraft:pickaxes[minecraft:custom_data~{havoc_wear53:{}}] if items entity @s weapon.offhand #minecraft:pickaxes[minecraft:custom_data~{havoc_wear53:{}}] run function havoc:r53/wear/restore_nonheld
 execute if predicate havoc:burning if items entity @s container.* minecraft:tnt run function havoc:player/burn_tnt
 execute if items entity @s container.* #havoc:meat run function havoc:r15/food
 execute if items entity @s container.* minecraft:shield run function havoc:r19/shields

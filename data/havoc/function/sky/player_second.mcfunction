@@ -5,7 +5,8 @@ execute unless predicate havoc:high_sky run return run scoreboard players set @s
 execute unless score @s h.sky_cd matches 0.. run scoreboard players set @s h.sky_cd 30
 scoreboard players remove @s h.sky_cd 1
 execute if score @s h.sky_cd matches 1.. run return 0
-scoreboard players set @s h.sky_cd 30
+scoreboard players set @s h.sky_cd 60
+execute unless predicate havoc:chance/25 run return 0
 tag @s add havoc.high_sky19
-function havoc:sky/try_spawn
+function havoc:r53/sky/burst
 tag @s remove havoc.high_sky19

@@ -5,44 +5,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:structure_void",
-              "condition": {
-                "type": "minecraft:all_of",
-                "terms": [
-                  {
-                    "type": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                      "minecraft:entity_type": "minecraft:player"
-                    }
-                  },
-                  {
-                    "type": "minecraft:inverted",
-                    "term": {
-                      "type": "minecraft:match_tool",
-                      "predicate": {
-                        "count": {
-                          "min": 1
-                        }
-                      }
-                    }
-                  }
-                ]
-              },
-              "modifier": {
-                "type": "minecraft:set_custom_data",
-                "tag": "{havoc_event:\"tnt\",havoc_barehand18:1b}"
-              }
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:tnt"
-            }
-          ]
+          "type": "minecraft:item",
+          "name": "minecraft:tnt"
         }
       ]
     },

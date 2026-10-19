@@ -1,5 +1,5 @@
 {
-  "parent": "havoc:manual/the_nether/light_armor",
+  "parent": "havoc:manual/the_nether/silk_touch",
   "display": {
     "icon": {
       "id": "minecraft:dragon_breath"
