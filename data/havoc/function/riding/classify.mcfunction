@@ -1,3 +1,4 @@
+execute if entity @s[tag=havoc.compat_exempt] run return 0
 execute unless entity @a[distance=..96,gamemode=!spectator] run return 0
 # Generated from the approved checklist; Java 26.3.
 tag @s add havoc.riding_checked

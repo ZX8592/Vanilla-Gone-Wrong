@@ -1,6 +1,6 @@
 data modify storage havoc:r14 patrol.owner set from entity @s UUID
 # Generated from the approved checklist; Java 26.3.
-execute store result score #patrol_near h.tmp if entity @e[type=pillager,distance=..64,limit=12]
+execute store result score #patrol_near h.tmp if entity @e[type=pillager,distance=..64,limit=12,tag=!havoc.compat_exempt]
 execute if score #patrol_near h.tmp matches 12.. run return 0
 execute store result storage havoc:r14 patrol.x int 1 run data get entity @s Pos[0]
 execute store result storage havoc:r14 patrol.y int 1 run data get entity @s Pos[1]

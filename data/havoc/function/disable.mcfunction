@@ -14,6 +14,6 @@ execute as @a[tag=havoc.end_gravity] run function havoc:dimensions/gravity/remov
 execute as @a run function havoc:revision11/reach_remove
 execute as @a run function havoc:r12/mining/remove
 execute as @a run function havoc:r14/armor/remove
-execute in minecraft:overworld as @e[distance=0..,type=#havoc:managed] run function havoc:r14/armor/remove
-execute in minecraft:the_nether as @e[distance=0..,type=#havoc:managed] run function havoc:r14/armor/remove
-execute in minecraft:the_end as @e[distance=0..,type=#havoc:managed] run function havoc:r14/armor/remove
+execute in minecraft:overworld as @e[distance=0..,type=#havoc:managed,tag=!havoc.compat_exempt] run function havoc:r14/armor/remove
+execute in minecraft:the_nether as @e[distance=0..,type=#havoc:managed,tag=!havoc.compat_exempt] run function havoc:r14/armor/remove
+execute in minecraft:the_end as @e[distance=0..,type=#havoc:managed,tag=!havoc.compat_exempt] run function havoc:r14/armor/remove

@@ -1,4 +1,4 @@
-$execute unless data storage havoc:r53 wear.tool run data modify storage havoc:r53 wear.tool set from storage havoc:r53 default_tools."$(id)"
+$execute unless data storage havoc:r53 wear.tool if data storage havoc:r53 default_tools."$(id)" run function havoc:r54/compat/default_tool with storage havoc:r53 default_tools."$(id)"
 execute unless data storage havoc:r53 wear.tool run return run kill @e[type=item,tag=havoc.wear_buffer53,distance=..1]
 scoreboard players set #wear_base53 h.tmp 1
 execute if data storage havoc:r53 wear.tool.damage_per_block store result score #wear_base53 h.tmp run data get storage havoc:r53 wear.tool.damage_per_block

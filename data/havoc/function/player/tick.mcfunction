@@ -1,4 +1,6 @@
 # Generated from the approved checklist; Java 26.3.
+execute unless predicate havoc:r54/vanilla_dimension run return run function havoc:r54/compat/outside
+execute if entity @s[tag=havoc.compat_outside54] run tag @s remove havoc.compat_outside54
 scoreboard players add @s h.age 1
 function havoc:r31/death/player
 execute if score @s h.cd matches 1.. run scoreboard players remove @s h.cd 1
@@ -24,5 +26,5 @@ execute if score @s h.patrol_cd matches 1.. run scoreboard players remove @s h.p
 function havoc:r14/bell
 function havoc:r16/water/player
 execute if score #second h.time matches 0 run function havoc:player/second
-execute if entity @e[type=pufferfish,distance=..5,nbt=!{Health:0.0f}] run function havoc:r17/pull/puffer
+execute if entity @e[type=pufferfish,distance=..5,nbt=!{Health:0.0f},tag=!havoc.compat_exempt] run function havoc:r17/pull/puffer
 execute if score #slow_even23 h.tmp matches 0 if dimension minecraft:overworld align xyz run function havoc:r24/scan/ore

@@ -1,3 +1,4 @@
+execute if entity @s[tag=havoc.compat_exempt] run return 0
 execute if entity @s[type=ender_dragon] unless data entity @s Health run return 0
 # Generated from the approved checklist; Java 26.3.
 execute if entity @s[type=minecraft:bee] run function havoc:mob/init/bee

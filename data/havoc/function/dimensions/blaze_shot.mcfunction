@@ -1,4 +1,4 @@
 # Generated from the approved checklist; Java 26.3.
-execute if score @s h.fire_cd matches 1.. run return run kill @e[distance=0..,type=small_fireball,tag=havoc.flame_current,limit=1]
+execute if score @s h.fire_cd matches 1.. run return run kill @e[distance=0..,type=small_fireball,tag=havoc.flame_current,limit=1,tag=!havoc.compat_exempt]
 scoreboard players set @s h.fire_cd 25
-tag @e[distance=0..,type=small_fireball,tag=havoc.flame_current,limit=1] add havoc.flame_trail
+tag @e[distance=0..,type=small_fireball,tag=havoc.flame_current,limit=1,tag=!havoc.compat_exempt] add havoc.flame_trail

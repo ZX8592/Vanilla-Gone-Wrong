@@ -1,3 +1,4 @@
+execute if block ~ ~ ~ #havoc:compat/dragon_immune run return 0
 execute if score #debris23 h.tmp matches 128.. run return 0
 # Generated from the approved checklist; Java 26.3.
 execute positioned ~0.5 ~0.05 ~0.5 run kill @e[type=marker,tag=havoc.dragon_stone_watch,distance=..0.3]

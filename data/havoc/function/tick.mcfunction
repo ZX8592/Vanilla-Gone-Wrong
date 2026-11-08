@@ -11,6 +11,7 @@ scoreboard players operation #minute32 h.time = #clock h.time
 scoreboard players operation #minute32 h.time %= #1200 h.tmp
 scoreboard players operation #second h.time = #clock h.time
 scoreboard players operation #second h.time %= #20 h.tmp
+execute if score #second h.time matches 0 run function havoc:r55/food/clock
 data modify storage havoc:r23 dirt_seen set value {}
 scoreboard players operation #slow_phase23 h.tmp = #clock h.time
 scoreboard players operation #slow_phase23 h.tmp %= #40 h.tmp

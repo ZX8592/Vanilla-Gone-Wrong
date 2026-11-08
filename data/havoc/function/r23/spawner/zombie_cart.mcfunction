@@ -1,4 +1,6 @@
-execute unless entity @a[distance=..24,gamemode=!spectator] run return 0
+execute unless entity @s[tag=havoc.range_checked55] run function havoc:r55/fish/check_range
+execute unless entity @a[distance=..24,gamemode=!spectator] unless entity @s[tag=havoc.fish_spawner55] run return 0
+execute if entity @s[tag=havoc.fish_spawner55] unless entity @a[distance=..32,gamemode=!spectator] run return 0
 execute store result score #delay23 h.tmp run data get entity @s Delay
 execute unless score #delay23 h.tmp matches 0..1 run return 0
 function havoc:r23/spawner/cap_zombie

@@ -18,7 +18,8 @@
     "minecraft:reinforced_deepslate",
     "minecraft:test_block",
     "minecraft:test_instance_block",
-    "minecraft:spawner"
+    "minecraft:spawner",
+    "#havoc:compat/dragon_immune"
   ],
   "replace": true
 }

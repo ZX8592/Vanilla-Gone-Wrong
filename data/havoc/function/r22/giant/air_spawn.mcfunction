@@ -352,9 +352,9 @@ execute positioned ~2 ~13 ~2 unless block ~ ~ ~ #havoc:r19/giant_space run retur
 # Generated from the approved checklist; Java 26.3.
 tag @e[distance=0..,tag=havoc.new_giant] remove havoc.new_giant
 summon giant ~ ~ ~ {Tags:["havoc.giant","havoc.airdrop22","havoc.new_giant","havoc.no_variant"],DeathLootTable:"havoc:entities/giant_death",Passengers:[{id:"minecraft:zombie",Tags:["havoc.giant_pilot","havoc.no_variant"],IsBaby:0b}]}
-execute as @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2] run attribute @s minecraft:attack_damage base set 0
-execute as @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2] run attribute @s minecraft:movement_speed base set 0.3
-effect give @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2] minecraft:slow_falling infinite 0 true
-scoreboard players set @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2] h.giant_cd 5
-execute as @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2] on passengers run function havoc:giant/pilot
+execute as @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2,tag=!havoc.compat_exempt] run attribute @s minecraft:attack_damage base set 0
+execute as @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2,tag=!havoc.compat_exempt] run attribute @s minecraft:movement_speed base set 0.3
+effect give @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2,tag=!havoc.compat_exempt] minecraft:slow_falling infinite 0 true
+scoreboard players set @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2,tag=!havoc.compat_exempt] h.giant_cd 5
+execute as @e[type=giant,tag=havoc.new_giant,limit=1,distance=..2,tag=!havoc.compat_exempt] on passengers run function havoc:giant/pilot
 tag @e[distance=0..,tag=havoc.new_giant] remove havoc.new_giant

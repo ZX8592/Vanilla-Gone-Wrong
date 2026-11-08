@@ -10,7 +10,7 @@ execute store result score #catch h.tmp run random value 1..100
 execute if score #catch h.tmp matches 1..10 run return run function havoc:r17/fishing/drowned
 execute if items entity @s contents minecraft:nautilus_shell if score #catch h.tmp matches 11..35 run return run function havoc:r17/fishing/nautilus
 execute if items entity @s contents minecraft:nautilus_shell if score #catch h.tmp matches 36..60 run return run function havoc:r17/fishing/zombie_nautilus
-execute if items entity @s contents #minecraft:fishes if score #catch h.tmp matches 11..20 run return run function havoc:r17/fishing/guardian
+execute if items entity @s contents #havoc:compat/vanilla_fishes if score #catch h.tmp matches 11..20 run return run function havoc:r17/fishing/guardian
 execute if items entity @s contents minecraft:cod if score #catch h.tmp matches 21..70 run return run function havoc:r17/fishing/cod
 execute if items entity @s contents minecraft:salmon if score #catch h.tmp matches 21..70 run return run function havoc:r17/fishing/salmon
 execute if items entity @s contents minecraft:tropical_fish if score #catch h.tmp matches 21..70 run return run function havoc:r17/fishing/tropical_fish

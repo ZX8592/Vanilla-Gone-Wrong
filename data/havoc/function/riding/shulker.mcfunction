@@ -1,4 +1,4 @@
-execute if entity @e[type=shulker,distance=..24] run return 0
+execute if entity @e[type=shulker,distance=..24,tag=!havoc.compat_exempt] run return 0
 # Generated from the approved checklist; Java 26.3.
 tag @e[distance=0..,tag=havoc.mount_new] remove havoc.mount_new
 summon minecraft:shulker ~ ~ ~ {Tags:["havoc.mount_new","havoc.no_variant"]}
