@@ -1,2 +1,1 @@
-# Generated from the approved checklist; Java 26.3.
-$execute positioned ~$(x) ~$(y) ~$(z) if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air unless block ~ ~-1 ~ #havoc:passable store success score #teleported h.tmp run tp @s ~ ~ ~
+$execute positioned ~$(x) ~$(y) ~$(z) align xyz positioned ~0.5 ~ ~0.5 if loaded ~ ~ ~ if block ~ ~ ~ #havoc:air if block ~ ~1 ~ #havoc:air if block ~ ~-1 ~ #havoc:r56/pearl_floor store success score #teleported h.tmp run tp @s ~ ~ ~

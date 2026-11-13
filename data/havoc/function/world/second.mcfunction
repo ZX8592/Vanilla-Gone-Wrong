@@ -1,4 +1,3 @@
-execute as @e[distance=0..,type=#havoc:r32/follow48,tag=havoc.initialized,tag=!havoc.follow56_37,tag=!havoc.compat_exempt] run function havoc:r32/follow48
 # Generated from the approved checklist; Java 26.3.
 execute as @e[distance=0..,type=#havoc:managed,tag=!havoc.initialized,tag=!havoc.compat_exempt] at @s run function havoc:mob/initialize
 execute as @e[distance=0..,type=#havoc:undead,tag=!havoc.compat_exempt] at @s on target if entity @s[type=player] run function havoc:mob/break_door
@@ -21,12 +20,11 @@ execute if score #miner_grief h.tmp matches 1 as @e[distance=0..,type=#havoc:pig
 execute if dimension minecraft:the_end as @e[distance=0..,type=#havoc:compat/vanilla_entities,type=!player,tag=!havoc.end_gravity,tag=!havoc.compat_exempt] if data entity @s Health unless entity @s[type=ender_dragon] run function havoc:dimensions/gravity/add
 execute unless dimension minecraft:the_end as @e[distance=0..,type=!player,tag=havoc.end_gravity] run function havoc:dimensions/gravity/remove
 execute if dimension minecraft:the_end as @e[type=end_crystal,tag=!havoc.pillar_checked,x=-64,y=65,z=-64,dx=128,dy=65,dz=128,tag=!havoc.compat_exempt] at @s run function havoc:terrain/pillar/check
-execute as @e[distance=0..,type=#havoc:compat/vanilla_undead,tag=!havoc.compat_exempt] at @s unless entity @s[nbt={Health:0.0f}] if entity @e[type=end_crystal,distance=..24,tag=!havoc.compat_exempt] run function havoc:revision/crystal_heal
 execute as @e[distance=0..,type=zombified_piglin,tag=!havoc.compat_exempt] at @s run function havoc:r12/piglin_anger
 execute as @e[distance=0..,type=#havoc:r12/elite,tag=!havoc.depth_checked,tag=!havoc.compat_exempt] at @s run function havoc:r12/elite_roll
 execute as @e[distance=0..,type=#havoc:undead,tag=!havoc.compat_exempt] at @s run function havoc:r12/zombie_target
 execute unless dimension minecraft:the_end run function havoc:portal/second
-execute if dimension minecraft:overworld if score #moon_active24 h.tmp matches 1 run advancement grant @a[gamemode=!creative,gamemode=!spectator,advancements={havoc:guide/full_moon=false}] only havoc:guide/full_moon
+execute if dimension minecraft:overworld if score #moon_active24 h.tmp matches 1 run advancement grant @a[distance=0..,gamemode=!creative,gamemode=!spectator,advancements={havoc:guide/full_moon=false}] only havoc:guide/full_moon
 execute as @e[distance=0..,type=piglin,tag=!havoc.compat_exempt] at @s run function havoc:r13/piglin/target
 execute as @e[distance=0..,type=piglin_brute,tag=!havoc.compat_exempt] at @s run function havoc:r13/piglin/brute
 execute as @e[distance=0..,type=#havoc:managed,tag=!havoc.compat_exempt] if items entity @s armor.* *[minecraft:damage] run function havoc:r14/armor/check

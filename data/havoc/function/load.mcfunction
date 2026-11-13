@@ -9,6 +9,7 @@ scoreboard objectives add h.slot dummy
 scoreboard objectives add h.scan dummy
 scoreboard objectives add h.uid dummy
 scoreboard objectives add h.cid27 dummy
+scoreboard objectives add h.aura58 dummy
 scoreboard objectives add h.detach32 dummy
 scoreboard players set #1200 h.tmp 1200
 scoreboard objectives add h.closest27 dummy
@@ -84,7 +85,7 @@ scoreboard players set #20 h.tmp 20
 scoreboard players set #clock h.time 0
 function havoc:r13/falling/setup
 function havoc:r16/setup
-tellraw @a {"text":"[原版失控 V1.55]  by 风ノ夏 数据包已加载","color":"dark_red"}
+tellraw @a {"text":"[原版失控 V1.59]  by 风ノ夏 数据包已加载","color":"dark_red"}
 scoreboard objectives add h.r17_weight dummy
 scoreboard objectives add h.r17_pull dummy
 scoreboard objectives add h.r17_cd dummy
@@ -146,3 +147,5 @@ execute unless data storage havoc:giant_offsets33 table{version:33} run function
 execute unless score #food_clock55 h.time matches 0..899 run scoreboard players set #food_clock55 h.time 0
 scoreboard players set #food_pulse55 h.tmp 0
 function havoc:r53/wear/load
+function havoc:r56/wear/load
+scoreboard objectives add h.shuffle_full57 dummy

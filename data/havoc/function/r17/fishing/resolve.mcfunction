@@ -1,7 +1,6 @@
 data modify storage havoc:r17 fish.owner set value [I;0,0,0,0]
 data modify storage havoc:r17 fish.owner set from entity @s Item.components."minecraft:custom_data".havoc_fisher17
-data remove entity @s Item.components."minecraft:custom_data".havoc_fisher17
-data remove entity @s Item.components."minecraft:custom_data".havoc_fished17
+function havoc:r56/fishing/clean
 execute if items entity @s contents #havoc:r17/curse_equipment run item modify entity @s contents havoc:r17/curse
 data modify storage havoc:r17 fish.item set from entity @s Item
 data modify storage havoc:r17 fish.motion set from entity @s Motion

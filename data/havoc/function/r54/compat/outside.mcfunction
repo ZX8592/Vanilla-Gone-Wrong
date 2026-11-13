@@ -1,4 +1,5 @@
 execute if entity @s[tag=havoc.compat_outside54] run return 0
+scoreboard players set @s h.wear_kind56 0
 execute if entity @s[tag=havoc.deep_slow] run function havoc:r12/mining/remove
 execute if entity @s[tag=havoc.end_gravity] run function havoc:dimensions/gravity/remove
 execute if entity @s[tag=havoc.shield_blast50] run function havoc:r50/shield/clear_blast

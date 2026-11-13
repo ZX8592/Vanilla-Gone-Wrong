@@ -1,26 +1,26 @@
 {
   "criteria": {
-    "event": {
-      "trigger": "minecraft:default_block_use",
+    "open": {
+      "trigger": "minecraft:player_generates_container_loot",
       "conditions": {
-        "location": {
-          "type": "minecraft:all_of",
-          "terms": [
-            {
-              "type": "minecraft:match_block",
-              "blocks": [
-                "minecraft:chest",
-                "minecraft:trapped_chest"
-              ]
-            },
-            {
-              "type": "minecraft:location_check",
-              "predicate": {
-                "structures": "#minecraft:village"
-              }
-            }
-          ]
-        }
+        "loot_tables": [
+          "minecraft:chests/village/village_armorer",
+          "minecraft:chests/village/village_butcher",
+          "minecraft:chests/village/village_cartographer",
+          "minecraft:chests/village/village_desert_house",
+          "minecraft:chests/village/village_fisher",
+          "minecraft:chests/village/village_fletcher",
+          "minecraft:chests/village/village_mason",
+          "minecraft:chests/village/village_plains_house",
+          "minecraft:chests/village/village_savanna_house",
+          "minecraft:chests/village/village_shepherd",
+          "minecraft:chests/village/village_snowy_house",
+          "minecraft:chests/village/village_taiga_house",
+          "minecraft:chests/village/village_tannery",
+          "minecraft:chests/village/village_temple",
+          "minecraft:chests/village/village_toolsmith",
+          "minecraft:chests/village/village_weaponsmith"
+        ]
       }
     }
   },

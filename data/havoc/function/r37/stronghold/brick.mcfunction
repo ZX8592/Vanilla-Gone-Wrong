@@ -1,3 +1,5 @@
+function havoc:r57/ambush/cap
+execute if score #ambush57 h.tmp matches 16.. run return 0
 setblock ~ ~ ~ air
 summon zombie ~ ~ ~ {Tags:["havoc.brick_zombie37","havoc.brick_new37","havoc.no_variant"],DeathLootTable:"havoc:r37/stronghold/brick",PersistenceRequired:1b}
 execute as @e[type=zombie,tag=havoc.brick_new37,distance=..1,limit=1,tag=!havoc.compat_exempt] at @s run function havoc:mob/init/zombie

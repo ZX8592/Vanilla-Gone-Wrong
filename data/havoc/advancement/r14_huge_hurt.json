@@ -2,7 +2,18 @@
   "criteria": {
     "event": {
       "trigger": "minecraft:entity_hurt_player",
-      "conditions": {}
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "#havoc:wither_tick",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
     }
   },
   "rewards": {

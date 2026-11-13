@@ -17,6 +17,7 @@ execute if dimension minecraft:the_nether if score @s h.plarge24 matches 1 if sc
 execute if dimension minecraft:the_nether if score @s h.plarge24 matches 1 if score @s h.r17_kind matches 91..100 run data modify storage havoc:r17 portal.kind set value "minecraft:creeper"
 scoreboard players set #portal_placed h.tmp 0
 function havoc:r17/portal/positions
+execute unless score #portal_placed h.tmp matches 1 if data storage havoc:r17 portal{kind:"minecraft:ghast"} run return run function havoc:r56/portal/skip_ghast
 execute unless score #portal_placed h.tmp matches 1 run return 0
 scoreboard players remove @s h.r17_wave 1
 scoreboard players set @s h.r17_kind 0

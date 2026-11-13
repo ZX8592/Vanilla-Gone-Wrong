@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "bite": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:entity_type": "#havoc:r58/meat_attackers"
+            },
+            "tags": [
+              {
+                "id": "#havoc:r58/melee",
+                "expected": true
+              }
+            ]
+          },
+          "blocked": false,
+          "taken": {
+            "min": 0.01
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:r58/food/bite"
+  }
+}

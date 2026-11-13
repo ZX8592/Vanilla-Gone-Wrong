@@ -1,3 +1,5 @@
+execute if score @s h.wear_kind56 matches 1..7 run function havoc:r56/wear/settle
+scoreboard players set @s h.wear_kind56 0
 # Generated from the approved checklist; Java 26.3.
 scoreboard players set #deep_aim h.tmp 0
 scoreboard players set #deep_ray h.tmp 0

@@ -1,0 +1,53 @@
+{
+  "criteria": {
+    "stage_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#havoc:meat",
+            "predicates": {
+              "minecraft:custom_data": "{havoc_food_stage55:1}"
+            }
+          }
+        ]
+      }
+    },
+    "stage_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#havoc:meat",
+            "predicates": {
+              "minecraft:custom_data": "{havoc_food_stage55:2}"
+            }
+          }
+        ]
+      }
+    },
+    "stage_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#havoc:meat",
+            "predicates": {
+              "minecraft:custom_data": "{havoc_food_stage55:3}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stage_1",
+      "stage_2",
+      "stage_3"
+    ]
+  ],
+  "rewards": {
+    "function": "havoc:r58/food/clean"
+  }
+}

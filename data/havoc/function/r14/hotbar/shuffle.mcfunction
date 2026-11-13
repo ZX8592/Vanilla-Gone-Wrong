@@ -1,31 +1,15 @@
-# Generated from the approved checklist; Java 26.3.
 summon item ~ ~ ~ {Tags:["havoc.shuffle_buffer"],PickupDelay:32767s,Item:{id:"minecraft:stone",count:1}}
-data modify storage havoc:r14 shuffle.slots set value ["hotbar.0","hotbar.1","hotbar.2","hotbar.3","hotbar.4","hotbar.5","hotbar.6","hotbar.7","hotbar.8","weapon.offhand"]
-execute if items entity @s weapon.offhand * run function havoc:r14/hotbar/offhand_step
-execute store result storage havoc:r14 shuffle.j int 1 run random value 0..8
-data modify storage havoc:r14 shuffle.i set value 8
-function havoc:r14/hotbar/swap with storage havoc:r14 shuffle
-execute store result storage havoc:r14 shuffle.j int 1 run random value 0..7
-data modify storage havoc:r14 shuffle.i set value 7
-function havoc:r14/hotbar/swap with storage havoc:r14 shuffle
-execute store result storage havoc:r14 shuffle.j int 1 run random value 0..6
-data modify storage havoc:r14 shuffle.i set value 6
-function havoc:r14/hotbar/swap with storage havoc:r14 shuffle
-execute store result storage havoc:r14 shuffle.j int 1 run random value 0..5
-data modify storage havoc:r14 shuffle.i set value 5
-function havoc:r14/hotbar/swap with storage havoc:r14 shuffle
-execute store result storage havoc:r14 shuffle.j int 1 run random value 0..4
-data modify storage havoc:r14 shuffle.i set value 4
-function havoc:r14/hotbar/swap with storage havoc:r14 shuffle
-execute store result storage havoc:r14 shuffle.j int 1 run random value 0..3
-data modify storage havoc:r14 shuffle.i set value 3
-function havoc:r14/hotbar/swap with storage havoc:r14 shuffle
-execute store result storage havoc:r14 shuffle.j int 1 run random value 0..2
-data modify storage havoc:r14 shuffle.i set value 2
-function havoc:r14/hotbar/swap with storage havoc:r14 shuffle
-execute store result storage havoc:r14 shuffle.j int 1 run random value 0..1
-data modify storage havoc:r14 shuffle.i set value 1
-function havoc:r14/hotbar/swap with storage havoc:r14 shuffle
+execute unless entity @e[type=item,tag=havoc.shuffle_buffer,distance=..1,limit=1] run return 0
+data modify storage havoc:r57 pool set value ["hotbar.0","hotbar.1","hotbar.2","hotbar.3","hotbar.4","hotbar.5","hotbar.6","hotbar.7","hotbar.8"]
+execute if items entity @s weapon.offhand * run data modify storage havoc:r57 pool append value "weapon.offhand"
+data modify storage havoc:r14 shuffle.slots set value []
+execute store result score #shuffle_pool57 h.tmp run data get storage havoc:r57 pool
+execute if score #shuffle_take57 h.tmp > #shuffle_pool57 h.tmp run scoreboard players operation #shuffle_take57 h.tmp = #shuffle_pool57 h.tmp
+scoreboard players operation #shuffle_left57 h.tmp = #shuffle_take57 h.tmp
+function havoc:r57/hotbar/pick
+scoreboard players operation #shuffle_i57 h.tmp = #shuffle_take57 h.tmp
+scoreboard players remove #shuffle_i57 h.tmp 1
+function havoc:r57/hotbar/permute
 kill @e[type=item,tag=havoc.shuffle_buffer,distance=..1]
 playsound minecraft:item.bundle.insert player @s ~ ~ ~ 0.7 0.7
 advancement grant @s only havoc:guide/shuffle

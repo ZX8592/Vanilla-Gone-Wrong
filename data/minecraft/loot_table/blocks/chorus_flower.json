@@ -185,7 +185,7 @@
         "terms": [
           "havoc:blast_loot_enabled",
           {
-            "chance": 0.1,
+            "chance": 1.0,
             "type": "minecraft:random_chance"
           }
         ]

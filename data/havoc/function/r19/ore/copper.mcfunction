@@ -1,3 +1,5 @@
+function havoc:r57/ambush/cap
+execute if score #ambush57 h.tmp matches 16.. run return 0
 setblock ~ ~ ~ air
 summon zombie ~ ~ ~ {Tags:["havoc.ore_zombie19","havoc.ore_new19","havoc.no_variant"],DeathLootTable:"havoc:r19/ore/copper",PersistenceRequired:1b}
 execute as @e[type=zombie,tag=havoc.ore_new19,distance=..1,limit=1,tag=!havoc.compat_exempt] at @s run function havoc:mob/init/zombie

@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:equipment": {
+              "mainhand": {
+                "items": "#havoc:compat/vanilla_pickaxes"
+              }
+            }
+          }
+        },
+        "damage": {
+          "dealt": {
+            "min": 1e-05
+          },
+          "type": {
+            "direct_entity": {
+              "minecraft:entity_type": "minecraft:player"
+            },
+            "tags": [
+              {
+                "id": "#havoc:r56/player_melee",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "havoc:r56/wear/melee"
+  }
+}

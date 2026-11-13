@@ -56,8 +56,6 @@ execute as @e[distance=0..,type=warden,tag=!havoc.compat_exempt] if data entity 
 execute as @e[distance=0..,type=warden,tag=havoc.charging,tag=!havoc.compat_exempt] at @s unless data entity @s Brain.memories."minecraft:sonic_boom_sound_delay" run function havoc:mob/sonic_trace
 execute as @e[distance=0..,type=item,tag=havoc.event_item23] at @s if items entity @s contents minecraft:structure_void[minecraft:custom_data~{havoc_event:"village_break"}] run function havoc:block/village_break
 execute as @e[distance=0..,tag=havoc.riding_cleanup] run function havoc:riding/cleanup
-execute as @e[distance=0..,type=creeper,tag=!havoc.synthetic,tag=!havoc.fuse_v12,tag=!havoc.compat_exempt] run function havoc:creeper/restore_fuse
-execute as @e[distance=0..,type=creeper,tag=!havoc.synthetic,tag=!havoc.speed_v13,tag=!havoc.compat_exempt] run function havoc:creeper/upgrade_speed
 execute as @e[distance=0..,type=creeper,tag=!havoc.synthetic,tag=!havoc.compat_exempt] unless predicate havoc:r24/creeper_signal run effect give @s luck 3 213 true
 execute if score #second h.time matches 0 as @e[distance=0..,type=creeper,tag=!havoc.synthetic,tag=!havoc.compat_exempt] run effect give @s luck 3 213 true
 execute as @e[distance=0..,type=area_effect_cloud,tag=!havoc.creeper_bolt,tag=!havoc.compat_exempt] at @s if data entity @s potion_contents.custom_effects[{id:"minecraft:luck",amplifier:-43b}] run function havoc:creeper/lightning_cloud

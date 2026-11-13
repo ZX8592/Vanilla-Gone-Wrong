@@ -1,3 +1,5 @@
+function havoc:r57/equipment/protected {slot:"weapon.mainhand",key:"mainhand"}
+execute if score #gear_protect57 h.tmp matches 1 run return 0
 execute store result score #zombie_weapon h.tmp run random value 1..100
 execute store result score #zombie_y h.tmp run data get entity @s Pos[1]
 execute store result score #zombie_quality h.tmp run random value 1..100

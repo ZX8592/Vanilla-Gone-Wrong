@@ -1,3 +1,5 @@
+execute store result score #flower_near56 h.tmp if entity @e[type=#havoc:r23/zombie_population,tag=havoc.flower50,nbt=!{Health:0.0f},distance=..32,limit=16,tag=!havoc.compat_exempt]
+execute if score #flower_near56 h.tmp matches 16.. run return run function havoc:r50/flower/fallback with storage havoc:r50 flower
 execute unless block ~ ~ ~ #havoc:passable run return run function havoc:r50/flower/fallback with storage havoc:r50 flower
 execute unless block ~ ~1 ~ #havoc:passable run return run function havoc:r50/flower/fallback with storage havoc:r50 flower
 $summon zombie ~0.5 ~ ~0.5 {Tags:["havoc.flower50","havoc.flower_new50","havoc.no_variant"],DeathLootTable:"havoc:r50/flower/$(flower)",CanPickUpLoot:0b,PersistenceRequired:1b}

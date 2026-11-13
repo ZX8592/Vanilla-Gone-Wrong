@@ -1,3 +1,4 @@
+execute if score @s h.charge matches 1.. run return 0
 # Generated from the approved checklist; Java 26.3.
 execute unless entity @a[tag=havoc.dragon_attacker,distance=..256] run return 0
 scoreboard players operation #dragon_id h.tmp = @s h.dragon_id

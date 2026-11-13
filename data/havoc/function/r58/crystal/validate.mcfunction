@@ -1,0 +1,1 @@
+$execute as $(uuid) at @s if dimension $(dimension) positioned $(x) $(y) $(z) if entity @s[type=#havoc:compat/vanilla_undead,nbt=!{Health:0.0f},distance=..24,tag=!havoc.compat_exempt,tag=!havoc.aura_selected58] run function havoc:r58/crystal/keep with storage havoc:r58 aura.link

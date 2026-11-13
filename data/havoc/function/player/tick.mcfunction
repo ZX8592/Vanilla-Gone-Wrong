@@ -4,9 +4,8 @@ execute if entity @s[tag=havoc.compat_outside54] run tag @s remove havoc.compat_
 scoreboard players add @s h.age 1
 function havoc:r31/death/player
 execute if score @s h.cd matches 1.. run scoreboard players remove @s h.cd 1
-execute if entity @s[tag=havoc.short_reach] run function havoc:revision11/reach_remove
 execute if items entity @s container.* #havoc:stack_limited_blocks[minecraft:max_stack_size=64] run function havoc:stack/inventory
-execute if items entity @s weapon.offhand #havoc:stack_limited_blocks[minecraft:max_stack_size=64] run function havoc:stack/player_slot {slot:"weapon.offhand",nbt:-106}
+execute if items entity @s weapon.offhand #havoc:stack_limited_blocks[minecraft:max_stack_size=64] run function havoc:stack/player_slot {slot:"weapon.offhand",path:"equipment.offhand"}
 execute if score @s h.mark matches 1.. run scoreboard players remove @s h.mark 1
 execute if predicate havoc:sprinting if block ~ ~-0.1 ~ farmland run setblock ~ ~-0.1 ~ dirt
 function havoc:r24/scan/normal
@@ -20,7 +19,7 @@ execute if block ~ ~ ~ #havoc:step_slowness run effect give @s slowness 3 3 true
 execute if score @s h.contact matches 1.. run function havoc:revision11/contact_tick
 scoreboard players operation @s h.dmg_seen = @s h.dmg_taken
 function havoc:r12/mining/player
-function havoc:r12/leaves/player
+function havoc:r59/feet/player
 function havoc:r14/squid/player
 execute if score @s h.patrol_cd matches 1.. run scoreboard players remove @s h.patrol_cd 1
 function havoc:r14/bell
