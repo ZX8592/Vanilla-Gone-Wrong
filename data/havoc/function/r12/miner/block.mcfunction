@@ -1,4 +1,3 @@
-execute if entity @s[type=#havoc:undead] if block ~ ~ ~ #minecraft:fence_gates run return 0
 execute if items entity @s weapon.mainhand minecraft:wooden_pickaxe unless block ~ ~ ~ #havoc:r17/wood_pick_breakable run return 0
 # Generated from the approved checklist; Java 26.3.
 execute if block ~ ~ ~ #havoc:miner_blacklist run return 0

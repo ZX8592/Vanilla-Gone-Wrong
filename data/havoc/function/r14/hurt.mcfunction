@@ -10,5 +10,4 @@ execute if score @s h.hurt18 matches 41.. at @s run function havoc:inventory/bre
 execute if score @s h.hurt18 matches 41.. at @s run function havoc:r17/hurt/spill
 execute if score @s h.hurt18 matches 40.. at @s run function havoc:player/pearl_select
 execute if score @s h.hurt18 matches 40.. at @s run function havoc:r12/eye/select
-execute if score @s h.hurt18 matches 21.. run function havoc:r30/hotbar/once
-execute if score @s h.hurt18 matches 1..20 if score @s h.shuffle_full57 matches 1 run function havoc:r30/hotbar/once
+execute if score @s h.hurt18 matches 1.. run function havoc:r30/hotbar/once
