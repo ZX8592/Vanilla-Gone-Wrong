@@ -18,6 +18,11 @@ scoreboard objectives add h.mark dummy
 scoreboard objectives add h.chest minecraft.custom:minecraft.open_chest
 scoreboard objectives add h.fish minecraft.custom:minecraft.fish_caught
 scoreboard objectives add h.jump minecraft.custom:minecraft.jump
+scoreboard objectives add h.leaf_y60 dummy
+scoreboard objectives add h.leaf_tick60 dummy
+scoreboard objectives add h.leaf_x60 dummy
+scoreboard objectives add h.leaf_z60 dummy
+scoreboard objectives add h.leaf_jump60 dummy
 scoreboard objectives add h.motion dummy
 scoreboard objectives add h.roll dummy
 scoreboard objectives add h.enabled dummy

@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#havoc:compat/vanilla_leaves",
     "#havoc:r31/infested",
     "#havoc:r59/trample_plants"
   ]

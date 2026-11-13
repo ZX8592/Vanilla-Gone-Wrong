@@ -19,6 +19,7 @@ execute if block ~ ~ ~ #havoc:step_slowness run effect give @s slowness 3 3 true
 execute if score @s h.contact matches 1.. run function havoc:revision11/contact_tick
 scoreboard players operation @s h.dmg_seen = @s h.dmg_taken
 function havoc:r12/mining/player
+function havoc:r12/leaves/player
 function havoc:r59/feet/player
 function havoc:r14/squid/player
 execute if score @s h.patrol_cd matches 1.. run scoreboard players remove @s h.patrol_cd 1

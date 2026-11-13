@@ -1,5 +1,6 @@
 # Generated from the approved checklist; Java 26.3.
 scoreboard players set #enabled h.cfg 0
+execute as @a[tag=havoc.leaf_active60] run function havoc:r60/leaves/clear
 scoreboard players set @a h.wear_kind56 0
 execute as @a at @s run function havoc:r53/wear/restore_all
 execute as @a[tag=havoc.shield_blast50] run function havoc:r50/shield/clear_blast
